@@ -1,12 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import { Services } from "./pages/Services";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/services" element={<Services />} />
-      </Routes>
+      <Routes>{/* Pages routes start here */}</Routes>
     </>
   );
 }

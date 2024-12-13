@@ -1,6 +1,6 @@
 import React from "react";
-import "./footer.css";
 import { Link } from "react-router-dom";
+import "./footer.css";
 
 export const Footer = () => {
   return (
@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="bg-black w-full p-2 ">
         <div className="flex flex-col">
           <div className="text-center">
-            <p className="text-[#F5A11D]   font-extrabold mt-20 text-5xl mb-3">
+            <p className="text-[#F5A11D] font-extrabold mt-20 text-5xl mb-3">
               Get Ahead of Your Competitors
             </p>
             <p className="text-[#707070] mb-4 font-semibold">
@@ -25,10 +25,12 @@ export const Footer = () => {
               Talk to us
             </button>
           </div>
-          {/* Contant Section */}
+          {/* Content Section */}
           <div className="flex flex-col md:flex-row justify-around mt-20 mb-20">
             <div className="flex flex-col">
-              <p className="text-white font-semibold text-3xl  mb-5">Get in touch with us</p>
+              <p className="text-white font-semibold text-3xl mb-5">
+                Get in touch with us
+              </p>
               <div className="flex flex-col md:flex-row gap-10 mb-5">
                 <div className="inline-flex">
                   <img src="/phone.svg" width={20} alt="" />
@@ -61,30 +63,36 @@ export const Footer = () => {
             </div>
             <div className="flex flex-row mt-10 md:mt-0">
               <div className="flex flex-col">
-                <Link to={"/"}>
-                  <p className="text-[#707070] font-semibold ">Home</p>
+                <Link to={"/"} className="text-[#707070] font-semibold">
+                  Home
                 </Link>
-                <Link to={"/about"}>
-                  <p className="text-[#707070] font-semibold">About us</p>
+                <Link to={"/about"} className="text-[#707070] font-semibold">
+                  About us
                 </Link>
-                <Link to={"/services"}>
-                  <p className="text-[#707070] font-semibold">Services</p>
+                <Link to={"/services"} className="text-[#707070] font-semibold">
+                  Services
                 </Link>
               </div>
               <div className="flex flex-col ml-4">
-                <Link to={"/community"}>
-                  <p className="text-[#707070] font-semibold">Community</p>
+                <Link
+                  to={"/community"}
+                  className="text-[#707070] font-semibold"
+                >
+                  Community
                 </Link>
-                <Link to={"/become-an-slg"}>
-                  <p className="text-[#707070] font-semibold">Become an SLG </p>
+                <Link
+                  to={"/become-an-slg"}
+                  className="text-[#707070] font-semibold"
+                >
+                  Become an SLG
                 </Link>
               </div>
             </div>
           </div>
-          {/*End Of Contant Section */}
+          {/* End Of Content Section */}
         </div>
       </div>
-      <div className="bg-[#110E0E]  w-full  py-10">
+      <div className="bg-[#110E0E] w-full py-10">
         <div className="flex flex-col md:flex-row justify-around items-center">
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
             <div className="mx-10 mb-4">
@@ -98,16 +106,41 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col ">
+          <div className="flex flex-col">
             <div className="flex justify-center mb-6 md:mb-0 md:relative top-[-78px] md:left-20">
               <img src="/whatsapp.svg" width={84} alt="WhatsApp" />
             </div>
 
             <div className="flex gap-6">
-              <img src="/twitter.svg" alt="Twitter" width={37} />
-              <img src="/instagram.svg" alt="Instagram" width={37} />
-              <img src="/linkedin.svg" alt="LinkedIn" width={37} />
-              <img src="/facebook.svg" alt="Facebook" width={37} />
+              <a
+                href="https://x.com/ValueKlip"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/twitter.svg" alt="Twitter" width={37} />
+              </a>
+              <a
+                href="https://www.instagram.com/valueklip?igsh=MXU0Y2NsZHQ1bGo2OQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/instagram.svg" alt="Instagram" width={37} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/valueklip/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/linkedin.svg" alt="LinkedIn" width={37} />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61557889663401&mibextid=ZbWKwL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/facebook.svg" alt="Facebook" width={37} />
+              </a>
             </div>
           </div>
         </div>
