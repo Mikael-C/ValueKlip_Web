@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "github": {
+    "repo": "github-username/repo-name",
+    "branch": "development"
+  }
+  }
+}
