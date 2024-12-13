@@ -1,13 +1,13 @@
 {
   "hosting": {
-    "public": "public",
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "github": {
-    "repo": "github-username/repo-name",
+    "repo": "ValueKlip/Valueklip-Website-React",
     "branch": "development"
   }
   }
