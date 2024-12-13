@@ -1,0 +1,33 @@
+
+.navbar {
+  width: 1109;
+  height: 76px;
+  margin: 0 auto;
+  border-radius: 56px;
+  position: relative;
+  top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.button-style {
+  padding: 6px 12px;
+  width: 119px;
+  height: 40px;
+  background: #0a5b9a;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #3b82f6;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
