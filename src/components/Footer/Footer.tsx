@@ -4,7 +4,7 @@ import "./footer.css";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col min-h-screen font-raleway">
+    <div className="flex flex-col  font-raleway">
       <div className="flex-grow"></div>
 
       <div className="bg-black w-full p-2 ">

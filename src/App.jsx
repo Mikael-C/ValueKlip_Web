@@ -1,10 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
+import { Services } from "./pages/Services";
 
 function App() {
   return (
     <>
-      <Routes>{/* Pages routes start here */}</Routes>
+      <Routes>
+        <Route path="/services" element={<Services />} />
+      </Routes>
     </>
   );
 }

@@ -12,8 +12,10 @@ export const Navbar = ({ theme }) => {
   return (
     <nav
       className={`p-3 font-raleway ${
-        theme === "dark" ? "bg-[#0B0C0C] text-white" : "bg-white"
-      } rounded-[56px] border-[1px] border-solid border-[#F5A11D] mx-32 mt-5 flex items-center justify-between`}
+        theme === "dark"
+          ? "bg-[#0B0C0C] text-white"
+          : "bg-white border-[1px] border-solid border-[#F5A11D]"
+      } rounded-[56px]  mx-32 mt-5 flex items-center justify-between`}
     >
       {/* Logo */}
       <Link to={"/"}>
