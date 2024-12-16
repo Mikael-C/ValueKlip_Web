@@ -19,14 +19,14 @@ export const Community = () => {
 
             {/* Content */}
             <div className="relative z-10 container mx-auto px-6 py-24">
-              <p className="text-secondary uppercase text-[24px] font-bold mb-2">
+              <p className="text-secondary uppercase text-[24px] font-normal mb-2">
                 + Our Services
               </p>
               <h1 className="text-4xl md:text-[64px] w-[553px] font-semibold leading-[70px] mb-4">
                 <span className="text-primary">Elevate Your </span>
                 Career
               </h1>
-              <p className="text-[#707070] text-sm font-normal mb-6 max-w-lg">
+              <p className="text-[#707070] text-[14px] font-normal mb-6 max-w-lg">
                 Join Valueklip Tech Community to access global paid gigs,
                 mentorship, courses, leadership opportunities, career
                 development, and create innovative solutions that impact
@@ -124,9 +124,9 @@ export const Community = () => {
             </div>
           </div>
           <div className="w-full py-20 px-10 h-[793px]">
-            <div className="absolute top-[1800px]  left-56">
+            <div className="absolute top-[1805px]  left-64">
               <div>
-                <img src="/Vector41.png" className="" alt="" />
+                <img src="/Vector41.png" className="w-[1084px] h-[400px]" alt="" />
               </div>
             </div>
             <div className="flex flex-row justify-between items-center  text-white py-16 px-24">
@@ -137,7 +137,7 @@ export const Community = () => {
 
               {/* List Section */}
               <div>
-                <ul className="space-y-4 text-black leading-relaxed">
+                <ul className="space-y-6 text-black leading-relaxed">
                   <li className="flex items-start">
                     <span className=" font-bold mr-3">✓</span>
                     Must possess relevant foundational, intermediate, or
