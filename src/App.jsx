@@ -1,14 +1,14 @@
-import {  Routes } from "react-router-dom";
-import { Navbar } from "./components/Navbar/Navbar";
+import { Route, Routes } from "react-router-dom";
+import { Services } from "./pages/Services";
+import { Community } from "./pages/Community";
 
 function App() {
   return (
     <>
-      
-        <Routes>
-
-        </Routes>
-
+      <Routes>
+        <Route path="/services" element={<Services />} />
+        <Route path="/community" element={<Community />} />
+      </Routes>
     </>
   );
 }

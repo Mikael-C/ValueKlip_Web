@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({ theme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -10,7 +10,14 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className=" p-2 font-raleway bg-[#0B0C0C] rounded-[56px] mx-32 mt-5 text-white flex items-center justify-between ">
+    <nav
+      className={`p-3 font-raleway ${
+        theme === "dark"
+          ? "bg-[#0B0C0C]  text-white"
+          : "bg-white border-[1px] border-solid border-[#F5A11D]"
+      } rounded-[56px]  mx-32 mt-5 flex items-center justify-between`}
+    >
+      {/* Logo */}
       <Link to={"/"}>
         <div className="flex ml-10 items-center space-x-2">
           <img src="/logo.svg" alt="Logo" />
@@ -18,22 +25,34 @@ export const Navbar = () => {
       </Link>
 
       {/* Desktop Links */}
-      <div className="hidden md:flex items-center space-x-6 ">
+      <div className="hidden md:flex items-center space-x-6">
         <Link
           to={"/about"}
-          className="text-[#707070] hover:text-white cursor-pointer"
+          className={`${
+            theme === "dark"
+              ? "text-white hover:text-gray-400"
+              : "text-[#707070CC] hover:text-black"
+          } cursor-pointer font-semibold`}
         >
           About Us
         </Link>
         <Link
           to={"/services"}
-          className="text-[#707070] hover:text-white cursor-pointer"
+          className={`${
+            theme === "dark"
+              ? "text-white hover:text-gray-400"
+              : "text-[#707070CC] hover:text-black"
+          } cursor-pointer font-semibold`}
         >
           Services
         </Link>
         <Link
           to={"/community"}
-          className="text-[#707070] hover:text-white cursor-pointer"
+          className={`${
+            theme === "dark"
+              ? "text-white hover:text-gray-400"
+              : "text-[#707070CC] hover:text-black"
+          } cursor-pointer font-semibold`}
         >
           Community
         </Link>
@@ -44,7 +63,6 @@ export const Navbar = () => {
         </Link>
       </div>
 
-      {/* Hamburger Icon for Mobile View */}
       <div className="md:hidden cursor-pointer flex items-center">
         <button onClick={toggleMenu} className="text-white text-3xl me-10">
           {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -53,7 +71,7 @@ export const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-[#0B0C0C] flex flex-col items-center justify-center space-y-6 text-white z-50">
+        <div className="  fixed inset-0 bg-[#0B0C0C]   flex flex-col items-center justify-center space-y-6 text-white z-50">
           {/* Close Icon inside Dropdown */}
           <div
             className="absolute top-5 right-5 text-white text-3xl cursor-pointer"
