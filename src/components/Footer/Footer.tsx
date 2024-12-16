@@ -108,7 +108,13 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col">
             <div className="flex justify-center mb-6 md:mb-0 md:relative top-[-78px] md:left-20">
-              <img src="/whatsapp.svg" width={84} alt="WhatsApp" />
+              <a
+                href="https://wa.me/2347076875450"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/whatsapp.svg" width={84} alt="WhatsApp" />
+              </a>
             </div>
 
             <div className="flex gap-6">

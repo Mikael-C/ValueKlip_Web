@@ -18,11 +18,11 @@ export const Services = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 container mx-auto px-6 py-12">
-            <p className="text-secondary uppercase font-semibold mb-2">
+          <div className="relative z-10 container mx-auto px-6 py-24">
+            <p className="text-secondary text-[24px] uppercase font-semibold mb-2">
               + Our Services
             </p>
-            <h1 className="text-4xl md:text-[64px] w-[553px] font-bold leading-tight mb-4">
+            <h1 className="text-4xl md:text-[64px] w-[553px] font-semibold leading-[70px] mb-4">
               Build, Scale, and <br /> Innovate with{" "}
               <span className="text-primary">Valueklip</span>
             </h1>
@@ -37,7 +37,7 @@ export const Services = () => {
           </div>
 
           {/* Blue Rectangle Behind the Woman */}
-          <div className="absolute top-0 right-96 w-[350px] h-[580px] bg-secondary z-0 rounded-lg hidden md:block"></div>
+          <div className="absolute top-0 right-96 w-[383px] h-[580px] bg-secondary z-0 rounded-lg hidden md:block"></div>
 
           {/* Woman Image */}
           <div className="absolute top-20 right-72 z-10 hidden md:block">
@@ -59,15 +59,15 @@ export const Services = () => {
           </div>
 
           {/* Circular Image ("From Africa to the World") */}
-          <div className="absolute top-8 right-8 z-20 hidden md:block">
-            <div className="w-[80px] h-[80px] rounded-full border-2 border-white flex items-center justify-center bg-black">
+          <div className="absolute top-8 right-32 z-20 hidden md:block">
+            <div className="w-[80px] h-[80px] rounded-full border-[1px] border-[#D7BDBD4F] flex items-center justify-center ml-10 mt-16 bg-black">
               <img
                 src="/Ellipse.png"
                 alt="From Africa to the World"
-                className="w-[64px] h-[64px] rounded-full object-cover"
+                className="w-[64px] h-[64px] rounded-full m"
               />
             </div>
-            <p className="text-[10px] mt-1 text-white text-center">
+            <p className="text-[16px] mt-1 text-[#707070] text-center  font-bold">
               From Africa to the World
             </p>
           </div>

@@ -13,7 +13,7 @@ export const Navbar = ({ theme }) => {
     <nav
       className={`p-3 font-raleway ${
         theme === "dark"
-          ? "bg-[#0B0C0C] text-white"
+          ? "bg-[#0B0C0C]  text-white"
           : "bg-white border-[1px] border-solid border-[#F5A11D]"
       } rounded-[56px]  mx-32 mt-5 flex items-center justify-between`}
     >
@@ -71,7 +71,7 @@ export const Navbar = ({ theme }) => {
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <div className="  fixed inset-0 bg-[#0B0C0C] flex flex-col items-center justify-center space-y-6 text-white z-50">
+        <div className="  fixed inset-0 bg-[#0B0C0C]   flex flex-col items-center justify-center space-y-6 text-white z-50">
           {/* Close Icon inside Dropdown */}
           <div
             className="absolute top-5 right-5 text-white text-3xl cursor-pointer"
