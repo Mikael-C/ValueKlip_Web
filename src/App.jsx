@@ -1,14 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-<<<<<<< HEAD
 import { Services } from "../src/pages/Services";
 import { Community } from "../src/pages/Community";
+import { BecomeAnSlg } from "../src/pages/BecomeAnSlg";
 import {HomePage} from  "../src/pages/Home"
-=======
-import { Services } from "./pages/Services";
-import { Community } from "./pages/Community";
-import { BecomeAnSlg } from "./pages/BecomeAnSlg";
 
->>>>>>> development-osama
 function App() {
   return (
     <>
