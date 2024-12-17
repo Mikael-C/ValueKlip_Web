@@ -30,6 +30,49 @@ const Navbar = ({ theme = "dark" }) => {
       </Link>
 
       {/* Desktop Links */}
+<<<<<<< HEAD
+      <div className="hidden md:flex items-center space-x-6">
+        <Link
+          to={"/about"}
+          className={`${
+            theme === "dark"
+              ? "text-white hover:text-gray-400"
+              : "text-[#707070CC] hover:text-black"
+          } cursor-pointer font-semibold`}
+        >
+          About Us
+        </Link>
+        <Link
+          to={"/services"}
+          className={`${
+            theme === "dark"
+              ? "text-white hover:text-gray-400"
+              : "text-[#707070CC] hover:text-black"
+          } cursor-pointer font-semibold`}
+        >
+          Services
+        </Link>
+        <Link
+          to={"/community"}
+          className={`${
+            theme === "dark"
+              ? "text-white hover:text-gray-400"
+              : "text-[#707070CC] hover:text-black"
+          } cursor-pointer font-semibold`}
+        >
+          Community
+        </Link>
+        <Link to={"/become-an-slg"}>
+          <button className="px-2 py-1 me-10 rounded-2xl bg-[#0a5b9a] text-white cursor-pointer hover:bg-gray-400">
+            Become an SLG
+          </button>
+        </Link>
+      </div>
+
+      <div className="md:hidden cursor-pointer flex items-center">
+        <button onClick={toggleMenu} className="text-white text-3xl me-10">
+          {isMenuOpen ? <FaTimes /> : <FaBars />}
+=======
       <div className="hidden md:flex items-center space-x-6 me-5">
         <NavLink
           to="/about"
@@ -102,12 +145,18 @@ const Navbar = ({ theme = "dark" }) => {
           ) : (
             <FaBars className="text-white text-2xl" />
           )}
+>>>>>>> development-osama
         </button>
       </div>
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
+<<<<<<< HEAD
+        <div className="  fixed inset-0 bg-[#0B0C0C]   flex flex-col items-center justify-center space-y-6 text-white z-50">
+          {/* Close Icon inside Dropdown */}
+=======
         <div className="fixed inset-0 bg-[#0B0C0C] flex flex-col items-center justify-center space-y-6 text-white z-50">
+>>>>>>> development-osama
           <div
             className="absolute top-5 right-5 text-white text-3xl cursor-pointer"
             onClick={toggleMenu}
@@ -138,7 +187,11 @@ const Navbar = ({ theme = "dark" }) => {
           </Link>
           <Link to={"/become-an-slg"}>
             <button
+<<<<<<< HEAD
+              className="px-4 py-2 rounded-[12px] bg-[#0a5b9a] text-white cursor-pointer hover:bg-gray-400"
+=======
               className="px-4 py-2 rounded-[12px] bg-[#0a5b9a] text-white cursor-pointer hover:bg-gray-500"
+>>>>>>> development-osama
               onClick={toggleMenu}
             >
               Become an SLG
@@ -149,5 +202,8 @@ const Navbar = ({ theme = "dark" }) => {
     </nav>
   );
 };
+<<<<<<< HEAD
+=======
 
 export default Navbar;
+>>>>>>> development-osama
