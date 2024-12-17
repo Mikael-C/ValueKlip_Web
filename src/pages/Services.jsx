@@ -19,7 +19,7 @@ export const Services = () => {
 
           {/* Content */}
           <div className="relative z-10 container mx-auto px-6 py-24">
-            <p className="text-secondary text-[24px] uppercase font-semibold mb-2">
+            <p className="text-secondary text-[24px] uppercase font-normal mb-2">
               + Our Services
             </p>
             <h1 className="text-4xl md:text-[64px] w-[553px] font-semibold leading-[70px] mb-4">
