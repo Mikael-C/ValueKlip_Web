@@ -11,14 +11,14 @@ const Navbar = ({ theme = "dark" }) => {
 
   const themeStatus = `${
     theme === "dark"
-      ? "bg-[#0B0C0C] text-white border-none"
+      ? "md:bg-[#0B0C0C] bg-black text-white  border-[#707070]  border-t-0 border-l-0 border-r-0  md:border-none"
       : "bg-white border-[1px] border-solid border-[#F5A11D]"
   } `;
 
   return (
     <div className="">
       <div>
-        <img src="/navbarBg.png" className="absolute z-10 top-0 left-0" alt="" />
+        <img src="/navbarBg.png" className="absolute z-10 md:top-0 top-36 left-0" alt="" />
       </div>
 
       <nav
@@ -28,7 +28,6 @@ const Navbar = ({ theme = "dark" }) => {
         <Link to={"/"}>
           <div className="flex ml-5 items-center z-50">
             {" "}
-            {/* Add z-10 to make sure it appears above the background */}
             <img src="/logo.svg" alt="Logo" className="w-[65px] h-[52px]" />
           </div>
         </Link>
