@@ -13,17 +13,49 @@ export const Community = () => {
               <img
                 src="/bg.png"
                 alt="Background"
-                className="opacity-50 w-full h-[600px] "
+                className="opacity-80 w-full h-[600px] "
               />
             </div>
-
+            <div className="absolute md:hidden left-48 -mt-10 z-40">
+              <div className="flex ">
+                <img
+                  src="/men-commuinty-mobile.png"
+                  alt="men-commuinty-mobile"
+                  className="w-[64px] h-[64px]"
+                />
+                <img
+                  src="/women-commuinty-mobile.png"
+                  alt="women-commuinty-mobile"
+                  className="w-[32px] h-[32px] mt-3"
+                />
+              </div>
+            </div>
+            <div className="md:hidden">
+              <img
+                src="/Vector44.png"
+                className="absolute z-40 left-48 h-[547px]"
+                alt=""
+              />
+            </div>
+            <div className="md:hidden">
+              <img
+                src="/Rectangle3.png"
+                className="absolute mt-80 w-full"
+                alt=""
+              />
+            </div>
             {/* Content */}
-            <div className="relative z-10 container mx-auto px-6 py-24">
+            <div className="relative z-40 container text-center md:text-left mx-auto px-6 py-24">
               <p className="text-secondary uppercase text-[24px] font-normal mb-2">
-                + Our Services
+                + COMMUNITY
               </p>
-              <h1 className="text-4xl md:text-[64px] w-[553px] font-semibold leading-[70px] mb-4">
-                <span className="text-primary">Elevate Your </span>
+              <h1 className="text-5xl md:ml-0 ml-8 md:text-[64px] w-[265px] md:w-[553px] font-[500] md:font-semibold leading-[70px] mb-4">
+                <span className="text-primary">
+                  <span className="bg-gradient-to-t p-2 from-secondary  to-black md:bg-none bg-opacity-30 md:bg-opacity-100  px-2">
+                    Elevate
+                  </span>
+                  Your{" "}
+                </span>
                 Career
               </h1>
               <p className="text-[#707070] text-[14px] font-normal mb-6 max-w-lg">
@@ -32,44 +64,47 @@ export const Community = () => {
                 development, and create innovative solutions that impact
                 millions of lives.
               </p>
-              <button className="bg-secondary text-white px-6 py-2 font-bold rounded-lg">
+              <button className="bg-secondary text-white px-6 py-2 font-bold rounded-xl">
                 Join now
               </button>
             </div>
 
             {/* Blue Rectangle Behind the men */}
-            <div className="absolute top-0 right-80 w-[383px] h-[600px] bg-secondary z-0 rounded-lg hidden md:block"></div>
+            <div className="absolute top-0 right-80 w-[383px] h-[600px] bg-secondary z-30 rounded-lg hidden md:block"></div>
 
             {/* men Image */}
-            <div className="absolute top-10 right-10 z-10 hidden md:block">
+            <div className="absolute top-10 z-50 right-10  hidden md:block">
               <img
                 src="/confident-businessman-smiles-city-night-generated-by-ai.png"
                 alt="Professional Men"
-                className="w-[580px] h-auto z-50"
+                className="w-[580px] h-auto "
               />
             </div>
 
-            {/* White Badge: 35+ Years of Industry Experience */}
-            <div className="absolute top-[280px] left-[620px] w-[290px]   hidden md:block">
-              <div className="bg-white  flex flex-col items-center justify-center  text-black rounded-md  px-2 text-center">
-                <p className="text-[40px] font-normal  ">Great Team</p>
-                <p className="text-[16px] text-[#707070] font-medium  whitespace-nowrap text-center">
+            {/* White Badge: */}
+            <div className="absolute md:rotate-0 -rotate-12 z-40 md:top-[280px] md:left-[620px] md:w-[290px] w-[133px] left-[150px] top-[490px]  ">
+              <div className="bg-white  flex flex-col items-center justify-center  text-black md:rounded-md rounded-sm px-2  text-center">
+                <p className="md:text-[40px] text-[18px] font-normal  ">
+                  Great Team
+                </p>
+                <p className="md:text-[16px] text-[10px] text-[#707070] font-medium  whitespace-nowrap text-center mb-1 md:mb-0">
                   Produce successful product
                 </p>
               </div>
             </div>
           </div>
-          <div className="bg-black w-full px-32">
-            <div className="flex flex-row justify-evenly py-20">
+          {/* LIST */}
+          <div className="bg-black w-full md:px-32 ">
+            <div className="flex md:flex-row flex-col   md:justify-evenly py-20">
               {/* Title Section */}
-              <div className="mt-20">
-                <p className="text-orange text-[48px] font-extrabold w-[508px] leading-tight">
+              <div className="mb-20 md:mb-0 text-center z-50 me-10 md:me-0">
+                <p className="text-orange  md:ml-0 ml-9 md:text-start md:text-[48px] text-3xl font-extrabold md:w-[508px] w-[90%]  leading-tight">
                   Exclusive Perks of Joining the Valueklip Tech Community
                 </p>
               </div>
 
               {/* List Section */}
-              <div className="text-white w-[600px] ml-40">
+              <div className="text-white ml-5  md:w-[600px] md:ml-40 w-[91%]">
                 <ul>
                   <li>
                     <CommunityList
@@ -123,21 +158,36 @@ export const Community = () => {
               </div>
             </div>
           </div>
-          <div className="w-full py-20 px-10 h-[793px]">
+          <div className="w-full py-20 px-10 md:h-[793px] ">
             <div className="absolute top-[1805px]  left-64">
-              <div>
-                <img src="/Vector41.png" className="w-[1084px] h-[400px]" alt="" />
+              <div className="md:block hidden">
+                <img
+                  src={`/Vector41.png`}
+                  className="w-[1084px] h-[400px]"
+                  alt=""
+                />
+              </div>
+              {/* TODO */}
+              <div className="md:hidden hidden">
+                <img
+                  src={`/Vector41-mobile.png`}
+                  className="w-[1084px] h-[553px] "
+                  alt=""
+                />
               </div>
             </div>
-            <div className="flex flex-row justify-between items-center  text-white py-16 px-24">
+
+            {/* REQUIREMENTS */}
+
+            <div className="flex md:top-0   md:flex-row flex-col justify-between items-center  text-white py-16 md:px-24">
               {/* Title Section */}
-              <div className=" font-extrabold text-[48px] text-black leading-tight ">
+              <div className=" font-extrabold -mt-20 md:mt-0 w-[90%] md:w-[]  md:text-[48px] mb-44 md:mb-0 text-[34px]  text-black leading-tight ">
                 <p>Requirements to join the Valueklip Tech Community</p>
               </div>
 
               {/* List Section */}
-              <div>
-                <ul className="space-y-6 text-black leading-relaxed">
+              <div className=" relative md:ml-10 -top-20 md:top-0">
+                <ul className="space-y-6 font-[600] md:font-[400]  text-black leading-relaxed">
                   <li className="flex items-start">
                     <span className=" font-bold mr-3">✓</span>
                     Must possess relevant foundational, intermediate, or

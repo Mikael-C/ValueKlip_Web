@@ -13,6 +13,7 @@ function App() {
         <Route path="/community" element={<Community />} />
         <Route path="/become-an-slg" element={<BecomeAnSlg />} />
       </Routes>
+
     </>
   );
 }

@@ -5,7 +5,7 @@ import "../App.css";
 
 export const PagesLayout = ({ children, isNavbarDark }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col  max-w-full">
       {/* Navbar */}
       <div className={`${isNavbarDark ? "bg-black " : "bg-white "} h-40`}>
         <Navbar theme={isNavbarDark ? "dark" : "light"} />

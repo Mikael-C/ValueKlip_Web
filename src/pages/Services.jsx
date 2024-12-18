@@ -7,40 +7,59 @@ export const Services = () => {
     <PagesLayout isNavbarDark={true}>
       <>
         {/* Hero Section */}
-        <div className="relative bg-black text-white h-[600px] font-raleway">
+        <div className="relative bg-black text-white md:h-[600px] h-[690px] font-raleway">
           {/* Background Image */}
-          <div className="absolute top-0 left-0 w-full ">
+          <div className="absolute top-0  left-0 w-full ">
             <img
               src="/bg.png"
               alt="Background"
-              className="opacity-50 w-full h-[600px] "
+              className="opacity-80 w-full h-[700px] "
             />
           </div>
-
+          {/* Mobile Screen Vector */}
+          <div className="md:hidden">
+            <img
+              src="/Vector44.png"
+              className="absolute z-40 left-48 h-[547px]"
+              alt=""
+            />
+          </div>
+          <div className="md:hidden">
+            <img
+              src="/Rectangle3.png"
+              className="absolute mt-96 w-full"
+              alt=""
+            />
+          </div>
           {/* Content */}
-          <div className="relative z-10 container mx-auto px-6 py-24">
-            <p className="text-secondary text-[24px] uppercase font-normal mb-2">
+          <div className="relative text-center md:text-left  z-10 container mx-auto px-6 py-24">
+            <p className="text-secondary  md:text-[24px] text-[15px]  uppercase font-normal mb-2">
               + Our Services
             </p>
-            <h1 className="text-4xl md:text-[64px] w-[553px] font-semibold leading-[70px] mb-4">
-              Build, Scale, and <br /> Innovate with{" "}
-              <span className="text-primary">Valueklip</span>
+            <h1 className="text-5xl md:text-[64px] font-semibold md:w-[553px] leading-[60px] md:leading-[70px] mb-2 md:mb-4">
+              <span className="bg-gradient-to-t from-secondary  to-black md:bg-none bg-opacity-15 md:bg-opacity-100  px-2">
+                Build, Scale,
+              </span>
+              and
+              <br /> Innovate with{" "}
+              <span className="text-primary font-bold">Valueklip</span>
             </h1>
-            <p className="text-[#707070] text-sm mb-6 max-w-lg">
+
+            <p className="text-[#707070] md:w-[374px]  text-sm mb-6 ">
               We offer tailored tech solutions—from custom software development
               and talent augmentation to expert technology advisory and
               consulting—that drive your business forward.
             </p>
-            <button className="bg-secondary text-white px-6 py-2 font-bold rounded-lg">
+            <button className="bg-secondary  text-white px-6 py-2 font-bold rounded-lg">
               Start Now
             </button>
           </div>
 
           {/* Blue Rectangle Behind the Woman */}
-          <div className="absolute top-0 right-96 w-[383px] h-[580px] bg-secondary z-0 rounded-lg hidden md:block"></div>
+          <div className="absolute top-0 right-96 w-[383px] h-[580px] bg-secondary z-30 rounded-lg hidden md:block"></div>
 
           {/* Woman Image */}
-          <div className="absolute top-20 right-72 z-10 hidden md:block">
+          <div className="absolute top-20 right-72 z-40 hidden md:block">
             <img
               src="/medium-shot-woman-working-as-lawyer.png"
               alt="Professional Woman"
@@ -49,39 +68,41 @@ export const Services = () => {
           </div>
 
           {/* White Badge: 35+ Years of Industry Experience */}
-          <div className="absolute top-60 left-[550px] w-[240px] h-[83px] z-20 hidden md:block">
-            <div className="bg-white  flex flex-col items-center justify-center gap-7 text-black rounded-md shadow-lg px-4 py-4 text-center">
-              <p className="text-[40px] font-medium leading-[16.32px] ">35+</p>
-              <p className="text-[16px] text-[#707070] font-medium leading-[16.32px] whitespace-nowrap text-left">
+          <div className=" -rotate-12 md:rotate-0 absolute md:top-60 top-[570px] z-40 md:left-[550px] md:w-[240px] md:h-[83px] w-[130px] h-[33px] left-[150px]   md:block">
+            <div className="bg-white  flex flex-col items-center justify-center md:gap-7 gap-2 text-black rounded-md shadow-lg px-4 md:py-4  text-center">
+              <p className="md:text-[40px] text-[22px] font-medium leading-[16.32px] ">
+                35+
+              </p>
+              <p className="md:text-[16px] text-[10px] text-[#707070] font-medium leading-[16.32px] whitespace-nowrap text-left">
                 Years of Industry Experience
               </p>
             </div>
           </div>
 
           {/* Circular Image ("From Africa to the World") */}
-          <div className="absolute top-8 right-32 z-20 hidden md:block">
-            <div className="w-[80px] h-[80px] rounded-full border-[1px] border-[#D7BDBD4F] flex items-center justify-center ml-10 mt-16 bg-black">
+          <div className=" -rotate-12 md:rotate-0 absolute md:top-8 md:right-32 top-1 left-40 md:left-96 z-20   ">
+            <div className="md:w-[80px] md:h-[80px] w-10 h-10  rounded-full border-[1px] border-[#D7BDBD4F] flex items-center justify-center ml-10 md:ml-[750px] md:mt-16 -mt-14 bg-black">
               <img
                 src="/Ellipse.png"
                 alt="From Africa to the World"
-                className="w-[64px] h-[64px] rounded-full m"
+                className="md:w-[64px] md:h-[64px] w-8 h-8 rounded-full "
               />
             </div>
-            <p className="text-[16px] mt-1 text-[#707070] text-center  font-bold">
+            <p className="md:text-[16px]  text-[8px] mt-1 text-[#707070] text-center ml-4 md:ml-[690px]  font-bold">
               From Africa to the World
             </p>
           </div>
         </div>
-        <div className="relative  bg-black px-10">
-          <div className="flex flex-row h-[1000px]">
+        <div className="relative  bg-black py-10 px-10">
+          <div className="flex flex-row md:h-[1000px] h-[2270px]">
             <div className="p-2 bg-[#121111] w-[45%] h-full"></div>
 
             <div className="p-2 bg-[#323232] w-[55%] h-full"></div>
-            <div className="p-2 bg-[#121111] z-40 w-[300px] absolute -top-28 left-[68%]   hidden md:block h-[1150px]"></div>
+            <div className="p-2 bg-[#121111] z-40 md:w-[300px] w-[170px] absolute md:-top-28 md:left-[68%]  left-[40%] -top-1   md:block md:h-[1150px] h-[2315px]"></div>
 
-            <div className="absolute -top-32 inset-0 flex justify-center items-center z-50">
+            <div className="absolute md:-top-32  inset-0 flex justify-center items-center z-50">
               <ul className="space-y-4 text-center">
-                <div className="flex flex-col md:flex-row space-x-10">
+                <div className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
                   <li>
                     <ServicesCards
                       icon={"/persons.svg"}
@@ -91,7 +112,7 @@ export const Services = () => {
                       }
                     />
                   </li>
-                  <li className="relative -top-12">
+                  <li className="relative md:-top-12">
                     <ServicesCards
                       icon={"/persons.svg"}
                       serviceTitle={"Out staffing"}
@@ -110,7 +131,7 @@ export const Services = () => {
                     />
                   </li>
                 </div>
-                <div className="flex flex-col md:flex-row space-x-10">
+                <div className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
                   <li>
                     <ServicesCards
                       icon={"/earth.svg"}
