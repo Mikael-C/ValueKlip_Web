@@ -7,6 +7,7 @@ export const Footer = () => {
     <div className="flex flex-col  font-raleway">
       <div className="flex-grow"></div>
 
+        <div className="md:hidden bg-[#221D1D] w-full h-10"></div>
       <div className="bg-black w-full p-2 ">
         <div className="flex ml-3 md:ml-0 flex-col">
           <div className="md:text-center">

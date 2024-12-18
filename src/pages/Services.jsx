@@ -24,7 +24,7 @@ export const Services = () => {
               alt=""
             />
           </div>
-          <div>
+          <div className="md:hidden">
             <img
               src="/Rectangle3.png"
               className="absolute mt-96 w-full"
@@ -93,12 +93,12 @@ export const Services = () => {
             </p>
           </div>
         </div>
-        <div className="relative  bg-black px-10">
+        <div className="relative  bg-black py-10 px-10">
           <div className="flex flex-row md:h-[1000px] h-[2270px]">
             <div className="p-2 bg-[#121111] w-[45%] h-full"></div>
 
             <div className="p-2 bg-[#323232] w-[55%] h-full"></div>
-            <div className="p-2 bg-[#121111] z-40 md:w-[300px] w-[170px] absolute md:-top-28 md:left-[68%]  left-[40%] -top-10     md:block md:h-[1150px] h-[2340px]"></div>
+            <div className="p-2 bg-[#121111] z-40 md:w-[300px] w-[170px] absolute md:-top-28 md:left-[68%]  left-[40%] -top-1   md:block md:h-[1150px] h-[2315px]"></div>
 
             <div className="absolute md:-top-32  inset-0 flex justify-center items-center z-50">
               <ul className="space-y-4 text-center">

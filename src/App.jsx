@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import { Services } from "./pages/Services";
 import { Community } from "./pages/Community";
 import { BecomeAnSlg } from "./pages/BecomeAnSlg";
-import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
