@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
+  theme: {  
     extend: {
       colors: {
         orange: "#F5A11D",
@@ -13,6 +13,7 @@ export default {
         raleway: ['"Raleway"', "sans-serif"], 
       },
     },
+
   },
   plugins: [],
 };

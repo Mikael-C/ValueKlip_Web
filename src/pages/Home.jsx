@@ -51,12 +51,12 @@ export const HomePage = () => {
               
             </div>
             <div className='div2'>
-              <div className='sub_container'>
-                <h1 className='title'>
+              <div className='sub_container '>
+                <h1 className='title sm:w-[262px] sm:ml-20 sm:text-left'>
                   Full-service Software <br />
                   Development
                 </h1>
-                <p className='desc'>
+                <p className='desc_fourth'>
                   Transform your ideas into a market-ready product. Whether you
                   need a web, mobile, or enterprise application, we’ve got you
                   covered! Our expert engineering team will work closely with you
@@ -179,9 +179,9 @@ export const HomePage = () => {
               <div className='work'>
                 
               <img
-                src="/Vector3.png"
+                src="/Group210.svg"
                 alt="Background"
-                className="z-50 "
+                className=" "
                 />
               
               
@@ -193,7 +193,7 @@ export const HomePage = () => {
                 </div>
               </div>
              
-              <div>
+              {/* <div className=" top-10 right-10 z-10 hidden md:block">
                 <img
                 src="/Maskgroup2.png"
                 alt="Background"
@@ -201,13 +201,13 @@ export const HomePage = () => {
                 />
                 
                </div>
-              <div className='mt-35'>
+              <div className='op-10 right-10 z-10 hidden md:block mt-35'>
                <img
                 src="/Maskgroup3.png"
                 alt="Background"
                 className="z-50 w-30 mr-55 mt- h-80"
                 />
-               </div>
+               </div> */}
           
             </div>
           </div>
@@ -215,14 +215,15 @@ export const HomePage = () => {
           </section>
           <div className="relative bg-black text-white h-[900px] font-raleway">
             <div className='today'>
-  <div className='image1'>
+  <div className='flex jutify center items-center ml-60'>
+  <img 
+               src="/Group211.svg"
+               alt="Background"
+               className="sm:"
+               />
+               
     
-    <p className='eclipse'>
-      Try Us Today!
-    </p>
-   <div className='elipse  mb-50s'>
   
-   </div>
   
   </div>
   
@@ -253,7 +254,7 @@ export const HomePage = () => {
   
   
          </div>
-          <div className="relative bg-white text-black h-[600px] font-raleway"> 
+          <div className="relative bg-white text-black h-[600px] font-raleway sm:flex-col"> 
             <div className='div_fourth'>
               <div>
                  <h1 className='title'>
@@ -328,6 +329,7 @@ export const HomePage = () => {
               
               </div>
               <div className='fourt_image'> 
+              
                 <div>
                 <h1 className='w-406 h-135 text-6xl'>Building team that drives</h1>
                 </div>
@@ -371,25 +373,36 @@ export const HomePage = () => {
                   <a href="#" target="_blank" className='get_link'>Get Started</a>
                 </div>
               </div>
-              <div className='sixth-image'>
+              <div className='flex justify-center ml-20'>
               
-              
-              
-              <img
-                src="/Maskgroup4.png"
-                alt="Background"
-                className=" z-50 ml-40 h-50 ml-50"
-                />
-                
+               <img 
+              src="/Group212.svg"
+              alt="Background"
+              className=" justify-center w-[600px]"
+            
+            />
+              </div>
+              {/* <div className= "flex justify-left mr-75 z-50 hidden md:block item-left">
+             
+             <img 
+               src="/Maskgroup4.png"
+               alt="Background"
+               className=" z-50"
+               />
+                 </div>
+                 <div className= "flex justify-left mr-75 z-50 hidden md:block item-left mt-20">
+             
+             <img 
+               src="/Maskgroup5.png"
+               alt="Background"
+               className=" z-50"
+               />
+                 </div> */}
 
-</div>
-<div>
-<img
-  src="/Maskgroup5.png"
-  alt="Background"
-  className="z-50 mt-40 relative h-50"
-  />
-  </div>
+
+              
+
+
 <div>
 
  
@@ -412,7 +425,11 @@ export const HomePage = () => {
          
          <div className="relative bg-black text-white h-[900px] font-raleway">
          <div className="div_seventh">
-             
+         <img 
+               src="/group.svg"
+               alt="Background"
+               className=" 0"
+               />
             </div>
           
   
