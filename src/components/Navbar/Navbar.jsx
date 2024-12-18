@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const Navbar = ({ theme = "dark" }) => {
+export const Navbar = ({ theme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -153,5 +153,3 @@ const Navbar = ({ theme = "dark" }) => {
     </div>
   );
 };
-
-export default Navbar;
