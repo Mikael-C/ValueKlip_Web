@@ -13,7 +13,7 @@ export const Services = () => {
             <img
               src="/bg.png"
               alt="Background"
-              className="opacity-50 w-full h-[600px] "
+              className="opacity-80 w-full h-[600px] "
             />
           </div>
 
@@ -37,10 +37,10 @@ export const Services = () => {
           </div>
 
           {/* Blue Rectangle Behind the Woman */}
-          <div className="absolute top-0 right-96 w-[383px] h-[580px] bg-secondary z-0 rounded-lg hidden md:block"></div>
+          <div className="absolute top-0 right-96 w-[383px] h-[580px] bg-secondary z-30 rounded-lg hidden md:block"></div>
 
           {/* Woman Image */}
-          <div className="absolute top-20 right-72 z-10 hidden md:block">
+          <div className="absolute top-20 right-72 z-40 hidden md:block">
             <img
               src="/medium-shot-woman-working-as-lawyer.png"
               alt="Professional Woman"
@@ -49,7 +49,7 @@ export const Services = () => {
           </div>
 
           {/* White Badge: 35+ Years of Industry Experience */}
-          <div className="absolute top-60 left-[550px] w-[240px] h-[83px] z-20 hidden md:block">
+          <div className="absolute top-60 z-40 left-[550px] w-[240px] h-[83px]  hidden md:block">
             <div className="bg-white  flex flex-col items-center justify-center gap-7 text-black rounded-md shadow-lg px-4 py-4 text-center">
               <p className="text-[40px] font-medium leading-[16.32px] ">35+</p>
               <p className="text-[16px] text-[#707070] font-medium leading-[16.32px] whitespace-nowrap text-left">

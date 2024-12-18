@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Services } from "./pages/Services";
 import { Community } from "./pages/Community";
 import { BecomeAnSlg } from "./pages/BecomeAnSlg";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/community" element={<Community />} />
         <Route path="/become-an-slg" element={<BecomeAnSlg />} />
       </Routes>
+
     </>
   );
 }

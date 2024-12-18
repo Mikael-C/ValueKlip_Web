@@ -13,12 +13,12 @@ export const Community = () => {
               <img
                 src="/bg.png"
                 alt="Background"
-                className="opacity-50 w-full h-[600px] "
+                className="opacity-80 w-full h-[600px] "
               />
             </div>
 
             {/* Content */}
-            <div className="relative z-10 container mx-auto px-6 py-24">
+            <div className="relative z-50 container mx-auto px-6 py-24">
               <p className="text-secondary uppercase text-[24px] font-normal mb-2">
                 + Our Services
               </p>
@@ -38,19 +38,19 @@ export const Community = () => {
             </div>
 
             {/* Blue Rectangle Behind the men */}
-            <div className="absolute top-0 right-80 w-[383px] h-[600px] bg-secondary z-0 rounded-lg hidden md:block"></div>
+            <div className="absolute top-0 right-80 w-[383px] h-[600px] bg-secondary z-30 rounded-lg hidden md:block"></div>
 
             {/* men Image */}
-            <div className="absolute top-10 right-10 z-10 hidden md:block">
+            <div className="absolute top-10 z-50 right-10  hidden md:block">
               <img
                 src="/confident-businessman-smiles-city-night-generated-by-ai.png"
                 alt="Professional Men"
-                className="w-[580px] h-auto z-50"
+                className="w-[580px] h-auto "
               />
             </div>
 
             {/* White Badge: 35+ Years of Industry Experience */}
-            <div className="absolute top-[280px] left-[620px] w-[290px]   hidden md:block">
+            <div className="absolute z-40 top-[280px] left-[620px] w-[290px]   hidden md:block">
               <div className="bg-white  flex flex-col items-center justify-center  text-black rounded-md  px-2 text-center">
                 <p className="text-[40px] font-normal  ">Great Team</p>
                 <p className="text-[16px] text-[#707070] font-medium  whitespace-nowrap text-center">
@@ -126,7 +126,11 @@ export const Community = () => {
           <div className="w-full py-20 px-10 h-[793px]">
             <div className="absolute top-[1805px]  left-64">
               <div>
-                <img src="/Vector41.png" className="w-[1084px] h-[400px]" alt="" />
+                <img
+                  src="/Vector41.png"
+                  className="w-[1084px] h-[400px]"
+                  alt=""
+                />
               </div>
             </div>
             <div className="flex flex-row justify-between items-center  text-white py-16 px-24">
