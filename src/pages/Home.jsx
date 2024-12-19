@@ -16,16 +16,13 @@ export const HomePage = () => {
         
         <main>
       
-          <section className="paq">
-            <div>
-          <h1 class="one">Design, build and launch</h1>
-            <h1 class="two">
-              your custom software
-              <span class="three">product faster</span>
-            </h1>
-            <span class="four"
-              >Transform your ideas into a market-ready product.</span>
-        <div className='learn'>
+          <div className="paq">
+            <div className='text_paq'>
+           <h1>Design, build and launch your custom software product faster
+           </h1>
+       
+                </div>
+                <div className='learn'>
           <a
                 href="#"
                 target="_blank"
@@ -42,14 +39,11 @@ export const HomePage = () => {
   </svg>
                 
                 </div>
-                </div>
-          </section>
+          </div>
   
           <section className='second'>
           <div className='paq1'>
-            <div className='image_container div1'>
-              
-            </div>
+        
             <div className='div2'>
               <div className='sub_container '>
                 <h1 className='title sm:w-[262px] sm:ml-20 sm:text-left'>
@@ -176,7 +170,7 @@ export const HomePage = () => {
               </div>
               <br />
               
-              <div className='work'>
+              <div className='first-image'>
                 
               <img
                 src="/Group210.svg"
@@ -188,9 +182,7 @@ export const HomePage = () => {
             
           
                
-                <div className='arrow_container'>
-                  
-                </div>
+                
               </div>
              
               {/* <div className=" top-10 right-10 z-10 hidden md:block">
@@ -331,9 +323,9 @@ export const HomePage = () => {
               <div className='fourt_image'> 
               
                 <div>
-                <h1 className='w-406 h-135 text-6xl'>Building team that drives</h1>
+                <h1 className='w-406 h-135 text-6xl sm:text-[12px]'>Building team that drives</h1>
                 </div>
-                <div className='mt-10'>
+                <div className='fourt_image'>
                     <img
                 src="/Result1.png"
                 alt="Background"
@@ -341,7 +333,7 @@ export const HomePage = () => {
                 />
     
                   </div>
-                <div className='mt-10'>
+                <div className='fourt_image'>
                   <img
                 src="/Vector.png"
                 alt="Background"
@@ -373,7 +365,7 @@ export const HomePage = () => {
                   <a href="#" target="_blank" className='get_link'>Get Started</a>
                 </div>
               </div>
-              <div className='flex justify-center ml-20'>
+              <div className='sixth_image'>
               
                <img 
               src="/Group212.svg"
@@ -428,7 +420,7 @@ export const HomePage = () => {
          <img 
                src="/group.svg"
                alt="Background"
-               className=" 0"
+               className="mr-20"
                />
             </div>
           
