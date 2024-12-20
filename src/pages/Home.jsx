@@ -246,6 +246,7 @@ export const HomePage = () => {
   
   
          </div>
+     
           <div className="relative bg-white text-black h-[600px] font-raleway sm:flex-col"> 
             <div className='div_fourth'>
               <div>
@@ -320,31 +321,85 @@ export const HomePage = () => {
                 </div>
               
               </div>
-              <div className='fourt_image'> 
               
-                <div>
-                <h1 className='w-406 h-135 text-6xl sm:text-[12px]'>Building team that drives</h1>
-                </div>
-                <div className='fourt_image'>
-                    <img
-                src="/Result1.png"
-                alt="Background"
-                className=" "
-                />
-    
-                  </div>
-                <div className='fourt_image'>
-                  <img
-                src="/Vector.png"
-                alt="Background"
-                className=" "
-                />
-                </div>
+              <div className='fourt_image'> 
+              <img 
+               src="/Group214.svg"
+               alt="Background"
+               className="w-[400px]"
+               />
+                
+             
                 </div>
             </div>
            
   
        </div>
+       
+       <div className="large">
+            <div className='today_large'>
+  <div className='i'>
+  <img 
+               src="/Group51.svg"
+               alt="Background"
+               className=""
+               />
+               
+    
+  
+  
+  </div>
+  
+  <div className='top'>
+  
+  <h1 className='h1'>
+  We Solve Market Problems  with Innovative Technology
+             </h1>
+  <p className='desc_h1'>
+  Our engineering team uses proven technologies to  deliver reliable, scalable, and fast solutions that  address your unique business needs.
+             </p>
+           
+             
+             </div>
+             </div>
+  
+  
+  
+         </div>
+        
+
+         <div className="today_mobile">
+            <div className='today'>
+ 
+  
+  <div className='top_mobile'>
+  
+  <h1 className='h1'>
+  We Solve Market Problems  with Innovative Technology
+             </h1>
+  <p className='desc'>
+  Our engineering team uses proven technologies to  deliver reliable, scalable, and fast solutions that  address your unique business needs.
+             </p>
+             </div>
+             <div className='w-[500px] mb-[400x]'>
+  <img 
+               src="/Group51.svg"
+               alt="Background"
+               className=" ml-[190px] mb-[300px]"
+               />
+               
+    
+  
+  
+  </div>
+             
+             
+             </div>
+  
+  
+  
+         </div>
+         
       
          <div className="sixth"> 
           <div className='div_sixth'>
