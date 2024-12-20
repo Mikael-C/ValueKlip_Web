@@ -3,7 +3,7 @@ import React from "react";
 export const ServicesCards = ({icon ,serviceTitle ,serviceDescription}) => {
   return (
     <div className="bg-black w-[300px]   flex flex-col p-4 rounded-lg shadow-lg relative ">
-      <div className="absolute -top-3 left-24 p rounded-full">
+      <div className="absolute -top-[0.5px] left-24 p rounded-full">
         <img src="/Vector42.svg" alt="Icon"  />
       </div>
 

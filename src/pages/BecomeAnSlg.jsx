@@ -12,7 +12,7 @@ export const BecomeAnSlg = () => {
             <img
               src="/bg.png"
               alt="Background"
-              className="opacity-50 w-full h-[700px] "
+              className="opacity-80 w-full h-[700px] "
             />
           </div>
 

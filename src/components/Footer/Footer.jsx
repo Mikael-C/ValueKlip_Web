@@ -7,16 +7,17 @@ export const Footer = () => {
     <div className="flex flex-col  font-raleway">
       <div className="flex-grow"></div>
 
+        <div className="md:hidden bg-[#221D1D] w-full h-10"></div>
       <div className="bg-black w-full p-2 ">
         <div className="flex ml-3 md:ml-0 flex-col">
           <div className="md:text-center">
             <p className="text-[#F5A11D] font-extrabold mt-20 md:text-5xl  text-[21px] mb-1">
               Get Ahead of Your Competitors
             </p>
-            <div className="text-[#707070] mb-4 text-[10px] md:text-[15px] w-[265px] md:w-full font-[500]">
+            <div className="text-[#707070] mb-4 text-[12px] md:text-[15px] w-[322px] md:w-full font-[500]">
               Schedule a discovery call today to build a new product, manage an
               existing platform, hire remote
-              <p >
+              <p>
                 talent, or receive expert technical advice tailored to your
                 business.
               </p>
@@ -31,12 +32,12 @@ export const Footer = () => {
               <p className="text-white font-semibold text-[13px] md:text-3xl mt-5 mb-5">
                 Get in touch with us
               </p>
-              <div className="flex  flex-row md:gap-10 mb-5">
-                <div className="inline-flex text-[12px] md:text-[15px]">
+              <div className="flex flex-col md:flex-row md:gap-10 md:mb-5 space-y-4 md:space-y-0">
+                <div className="inline-flex items-center text-[12px] md:text-[15px]">
                   <img
                     src="/phone.svg"
                     className="md:w-8 w-4 h-4 md:h-8"
-                    alt=""
+                    alt="Phone"
                   />
                   <p className="text-white ml-2 text-[10px] md:text-[15px] font-semibold">
                     Phone:{" "}
@@ -45,11 +46,11 @@ export const Footer = () => {
                     </span>
                   </p>
                 </div>
-                <div className="inline-flex text-[12px] md:text-[15px]">
+                <div className="inline-flex items-center text-[12px] md:text-[15px]">
                   <img
                     src="/email.svg"
                     className="md:w-8 w-4 h-4 md:h-8"
-                    alt=""
+                    alt="Email"
                   />
                   <p className="text-white ml-2 font-semibold">
                     Email:
@@ -59,11 +60,11 @@ export const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="inline-flex text-[12px] md:text-[15px]">
+              <div className="inline-flex items-center text-[12px] md:text-[15px] mt-4 md:mt-0">
                 <img
                   src="/address.svg"
                   className="md:w-8 w-4 h-4 md:h-8"
-                  alt=""
+                  alt="Address"
                 />
                 <p className="text-white ml-2 font-semibold">
                   Address:
@@ -73,6 +74,7 @@ export const Footer = () => {
                 </p>
               </div>
             </div>
+
             <div className="flex flex-col md:flex-row  md:mt-0 ">
               <div className="flex flex-col">
                 <Link

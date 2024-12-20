@@ -15,6 +15,7 @@ function App() {
         <Route path="/become-an-slg" element={<BecomeAnSlg />} />
         <Route path="/about" element={<AboutUs />} />
       </Routes>
+
     </>
   );
 }
