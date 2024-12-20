@@ -2,6 +2,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {  
+    
     extend: {
       colors: {
         orange: "#F5A11D",
@@ -13,7 +14,7 @@ export default {
         raleway: ['"Raleway"', "sans-serif"], 
       },
     },
-
+  
   },
   plugins: [],
 };
