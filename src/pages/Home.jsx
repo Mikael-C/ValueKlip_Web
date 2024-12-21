@@ -43,7 +43,7 @@ export const HomePage = () => {
                
                 className='learn_link'
                 >Learn More </a>
-                <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg  width="13" height="9" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M0.500977 2.5C0.224834 2.5 0.000976562 2.72386 0.000976562 3C0.000976562 3.27614 0.224834 3.5 0.500977 3.5V2.5ZM6.83431 3C6.83431 4.47276 8.02822 5.66667 9.50098 5.66667C10.9737 5.66667 12.1676 4.47276 12.1676 3C12.1676 1.52724 10.9737 0.333333 9.50098 0.333333C8.02822 0.333333 6.83431 1.52724 6.83431 3ZM0.500977 3.5H9.50098V2.5H0.500977V3.5Z" fill="url(#paint0_linear_151_1421)"/>
   <defs>
   <linearGradient id="paint0_linear_151_1421" x1="0.500977" y1="3.5" x2="9.50098" y2="3.5" gradientUnits="userSpaceOnUse">
