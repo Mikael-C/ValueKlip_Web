@@ -1,10 +1,19 @@
 import React from "react";
 
-export const ServicesCards = ({icon ,serviceTitle ,serviceDescription}) => {
+export const ServicesCards = ({
+  icon,
+  serviceTitle,
+  serviceDescription,
+  redirectTo,
+}) => {
+  const handleRedirect = () => {
+    window.location.href = redirectTo;
+  };
+
   return (
-    <div className="bg-black w-[300px]   flex flex-col p-4 rounded-lg shadow-lg relative ">
+    <div className="bg-black w-[300px] flex flex-col p-4 rounded-lg shadow-lg relative">
       <div className="absolute -top-[0.5px] left-24 p rounded-full">
-        <img src="/Vector42.svg" alt="Icon"  />
+        <img src="/Vector42.svg" alt="Icon" />
       </div>
 
       <div className="mt-4">
@@ -14,12 +23,16 @@ export const ServicesCards = ({icon ,serviceTitle ,serviceDescription}) => {
 
         <div className="mt-20 text-start text-white space-y-2">
           <p className="text-2xl font-semibold">{serviceTitle}</p>
-          <p className="text-[9px] font-bold  text-[#707070] ">
-           {serviceDescription}
+          <p className="text-[9px] font-bold text-[#707070]">
+            {serviceDescription}
           </p>
         </div>
 
-        <button className="mt-3 me-52 bg-orange text-black py-1 rounded-lg text-[10px] font-bold w-[70px] ">
+        {/* Button to handle the redirect */}
+        <button
+          onClick={handleRedirect}
+          className="mt-3 me-52 bg-orange text-black py-1 rounded-lg text-[10px] font-bold w-[70px]"
+        >
           Get Started
         </button>
       </div>
