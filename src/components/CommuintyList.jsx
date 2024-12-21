@@ -14,11 +14,12 @@ export const CommunityList = ({ title, description }) => {
 
       {/* Content Section */}
       <div className="">
-        <span className="md:text-orange text-[#0A5B9A] md:font-bold font-semibold">
-          {title}
-          {" "}
+        <span className="md:text-orange text-[#0A5B9A] md:font-[400] font-semibold">
+          {title}{" "}
         </span>
-        <span className="text-[#707070]">{description}</span>
+        <span className="md:text-white text-[#707070] font-[400]">
+          {description}
+        </span>
       </div>
     </div>
   );

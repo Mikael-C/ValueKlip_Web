@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link , NavLink} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = ({ theme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,11 +18,15 @@ export const Navbar = ({ theme }) => {
   return (
     <div className="">
       <div>
-        <img src="/navbarBg.png" className="absolute z-10 md:top-0 top-36 left-0" alt="" />
+        <img
+          src="/navbarBg.png"
+          className="absolute z-10 md:top-0 top-36 left-0"
+          alt=""
+        />
       </div>
 
       <nav
-        className={`relative p-3 font-raleway ${themeStatus} md:mt-5 border-b border-[0.5px] border-[#707070] flex py-4 items-center justify-between md:rounded-[56px] md:mx-8 md:w-auto sm:w-full sm:rounded-none z-50`}
+        className={`relative p-3 font-raleway ${themeStatus} md:mt-5 border-b border-[0.5px] border-[#707070] flex py-4 items-center justify-between md:rounded-[56px] md:mx-auto md:w-[1100px] sm:w-full sm:rounded-none z-50`}
       >
         {/* Logo */}
         <Link to={"/"}>
