@@ -113,6 +113,7 @@ export const Community = () => {
               {/* Title Section */}
               <div className="mb-20 md:mb-0 text-center z-50 me-10 md:me-0">
                 <p className="text-orange  md:-ml-20 ml-9 md:text-start md:text-[48px] text-3xl font-extrabold md:w-[508px] w-[90%]  leading-tight">
+
                   Exclusive Perks of Joining the Valueklip Tech Community
                 </p>
               </div>
