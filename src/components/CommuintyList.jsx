@@ -18,7 +18,7 @@ export const CommunityList = ({ title, description }) => {
           {title}
           {" "}
         </span>
-        <span className="text-[#707070]">{description}</span>
+        <span className="text-white">{description}</span>
       </div>
     </div>
   );

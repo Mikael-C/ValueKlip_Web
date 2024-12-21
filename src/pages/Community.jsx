@@ -9,15 +9,17 @@ export const Community = () => {
         <div>
           <div className="relative bg-black text-white h-[600px] font-raleway">
             {/* Background Image */}
-            <div className="absolute top-0 left-0 w-full ">
+            <div className="absolute top-0 left-0 w-full">
               <img
                 src="/bg.png"
                 alt="Background"
-                className="opacity-80 w-full h-[600px] "
+                className="opacity-80 w-full h-[600px]"
               />
             </div>
+
+            {/* Mobile Community Images */}
             <div className="absolute md:hidden left-48 -mt-10 z-40">
-              <div className="flex ">
+              <div className="flex">
                 <img
                   src="/men-commuinty-mobile.png"
                   alt="men-commuinty-mobile"
@@ -30,6 +32,8 @@ export const Community = () => {
                 />
               </div>
             </div>
+
+            {/* Mobile Vector Image */}
             <div className="md:hidden">
               <img
                 src="/Vector44.png"
@@ -37,62 +41,72 @@ export const Community = () => {
                 alt=""
               />
             </div>
+
             <div className="md:hidden">
               <img
                 src="/Rectangle3.png"
-                className="absolute mt-80 w-full"
+                className="absolute mt-[470px] h-96 w-full"
                 alt=""
               />
             </div>
+
             {/* Content */}
-            <div className="relative z-40 container text-center md:text-left mx-auto px-6 py-24">
-              <p className="text-secondary uppercase text-[24px] font-normal mb-2">
-                + COMMUNITY
-              </p>
-              <h1 className="text-5xl md:ml-0 ml-8 md:text-[64px] w-[265px] md:w-[553px] font-[500] md:font-semibold leading-[70px] mb-4">
-                <span className="text-primary">
-                  <span className="bg-gradient-to-t p-2 from-secondary  to-black md:bg-none bg-opacity-30 md:bg-opacity-100  px-2">
-                    Elevate
+            <div className="relative z-40 container mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between">
+              <div className="text-center  md:text-left md:w-[553px] flex-1">
+                <p className="text-secondary uppercase text-[24px] font-normal mb-2">
+                  + COMMUNITY
+                </p>
+                <h1 className="text-5xl text-white text-center md:text-start  md:ml-0  md:text-[64px] w-auto md:w-[553px] font-[500] md:font-semibold leading-[70px] mb-4">
+                  <span className="text-primary">
+                    <span className="bg-gradient-to-t p-2 from-secondary to-black md:bg-none bg-opacity-30 md:bg-opacity-100 px-2">
+                      Elevate
+                    </span>
+                    Your{" "}
                   </span>
-                  Your{" "}
-                </span>
-                Career
-              </h1>
-              <p className="text-[#707070] text-[14px] font-normal mb-6 max-w-lg">
-                Join Valueklip Tech Community to access global paid gigs,
-                mentorship, courses, leadership opportunities, career
-                development, and create innovative solutions that impact
-                millions of lives.
-              </p>
-              <button className="bg-secondary text-white px-6 py-2 font-bold rounded-xl">
-                Join now
-              </button>
-            </div>
-
-            {/* Blue Rectangle Behind the men */}
-            <div className="absolute top-0 right-80 w-[383px] h-[600px] bg-secondary z-30 rounded-lg hidden md:block"></div>
-
-            {/* men Image */}
-            <div className="absolute top-10 z-50 right-10  hidden md:block">
-              <img
-                src="/confident-businessman-smiles-city-night-generated-by-ai.png"
-                alt="Professional Men"
-                className="w-[580px] h-auto "
-              />
-            </div>
-
-            {/* White Badge: */}
-            <div className="absolute md:rotate-0 -rotate-12 z-40 md:top-[280px] md:left-[620px] md:w-[290px] w-[133px] left-[150px] top-[490px]  ">
-              <div className="bg-white  flex flex-col items-center justify-center  text-black md:rounded-md rounded-sm px-2  text-center">
-                <p className="md:text-[40px] text-[18px] font-normal  ">
-                  Great Team
+                  Career
+                </h1>
+                <p className="text-[#707070] text-[14px] font-normal mb-6 max-w-lg">
+                  Join Valueklip Tech Community to access global paid gigs,
+                  mentorship, courses, leadership opportunities, career
+                  development, and create innovative solutions that impact
+                  millions of lives.
                 </p>
-                <p className="md:text-[16px] text-[10px] text-[#707070] font-medium  whitespace-nowrap text-center mb-1 md:mb-0">
-                  Produce successful product
-                </p>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdPwLAWhiKKACozN5gLDLtY8ecpJjneWmlSwzQqdL5w4hXuUg/viewform"
+                  target="_blank"
+                >
+                  <button className="bg-secondary text-white px-6 py-2 font-bold rounded-xl">
+                    Join now
+                  </button>
+                </a>
+              </div>
+
+              {/* Blue Rectangle Behind the Man */}
+              <div className="absolute top-0 right-44 w-[383px] h-[600px] bg-secondary z-30 rounded-lg hidden md:block"></div>
+
+              {/* Man Image */}
+              <div className="absolute top-10 z-50 -right-14 hidden md:block">
+                <img
+                  src="/confident-businessman-smiles-city-night-generated-by-ai.png"
+                  alt="Professional Man"
+                  className="w-[580px] h-auto"
+                />
+              </div>
+
+              {/* White Badge */}
+              <div className="absolute md:rotate-0 -rotate-12 z-40 md:top-[280px] md:left-[570px] md:w-[290px] w-[133px] left-[150px] top-[490px]">
+                <div className="bg-white flex flex-col items-center justify-center text-black md:rounded-md rounded-sm px-2 text-center">
+                  <p className="md:text-[40px] text-[18px] font-normal">
+                    Great Team
+                  </p>
+                  <p className="md:text-[16px] text-[10px] text-[#707070] font-medium whitespace-nowrap text-center mb-1 md:mb-0">
+                    Produce successful product
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
           {/* LIST */}
           <div className="bg-black w-full md:px-32 ">
             <div className="flex md:flex-row flex-col   md:justify-evenly py-20">

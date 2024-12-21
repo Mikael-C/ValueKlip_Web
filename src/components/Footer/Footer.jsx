@@ -7,7 +7,7 @@ export const Footer = () => {
     <div className="flex flex-col  font-raleway">
       <div className="flex-grow"></div>
 
-        <div className="md:hidden bg-[#221D1D] w-full h-10"></div>
+      <div className="md:hidden bg-[#221D1D] w-full h-10"></div>
       <div className="bg-black w-full p-2 ">
         <div className="flex ml-3 md:ml-0 flex-col">
           <div className="md:text-center">
@@ -22,9 +22,15 @@ export const Footer = () => {
                 business.
               </p>
             </div>
-            <button className="bg-secondary p-1 px-4 rounded-[10px] text-[10px] md:text-[16px] md:w-[113px] text-white font-bold">
-              Talk to us
-            </button>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdveKonk5j4U8sK7SDH37zUv4JWHzQJ4eYcRYiCSTv8vr0Xg/v
+iewform?usp=sf_link"
+              target="_blank"
+            >
+              <button className="bg-secondary p-1 px-4 rounded-[10px] text-[10px] md:text-[16px] md:w-[113px] text-white font-bold">
+                Talk to us
+              </button>
+            </a>
           </div>
           {/* Content Section */}
           <div className="flex flex-col-reverse md:flex-row justify-around mt-10 md:mt-20 mb-20">
