@@ -1,0 +1,9 @@
+
+.loader-container{
+
+animation-delay: 800ms;
+
+animation-timing-function: ease-in-out;
+animation-duration: 300ms;
+
+}

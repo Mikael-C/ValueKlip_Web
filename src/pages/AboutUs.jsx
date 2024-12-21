@@ -30,7 +30,7 @@ export const AboutUs = () => {
           <img
                 src="/Group71.svg"
                 alt=""
-                 className="w-[1084px] h-[500px] ml-[100px]"
+                 className="w-[1084px] h-[500px] ml-[100px] opacity-0.2"
               />
 
 </div>
@@ -39,7 +39,8 @@ export const AboutUs = () => {
           <img
                 src="/Frame181.svg"
                 alt=""
-                 className="w-[1084px] h-[500px] ml-[100px]"
+                 className="w-[1084px] h-[600px] ml-[100px]  
+                 "
               />
 
 </div>
@@ -121,6 +122,8 @@ export const AboutUs = () => {
                 <h1 className='context_title'>
                 Experience the Valueklip  Effect
                 </h1>
+               
+             
                 <p className='desc_context'>
                 When you work with us, you will see our  core values in action. From visionary  thinking to agile solutions, and listening to  clients, the Valueklip Effect drives our  mission to empower businesses with  innovative technology solutions.
                 </p>

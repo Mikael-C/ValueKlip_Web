@@ -1,11 +1,33 @@
-import React from "react";
-import "./Home.css";
-import { PagesLayout } from "../layout/PagesLayout";
+import React, {useState, useEffect} from 'react';
+import './Home.css';
+import { PagesLayout } from '../layout/PagesLayout';
+import { Footer } from '../components/Footer/Footer';
+import Loader from '../components/Loader';
+import CollapsibleParagraph from '../components/Collapse';
+import Collapsible from '../components/Collapseservices';
+import CollapsibleWork from '../components/Collapsework';
+
+
 
 export const HomePage = () => {
-  return (
-    <PagesLayout isNavbarDark={true}>
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Simulate loading time (e.g., fetching data or waiting for assets to load)
+    const timer = setTimeout(() => setLoading(false), 3000); // 3 seconds
+
+    return () => clearTimeout(timer); // Cleanup the timer
+  }, []);
+    return (
+      
+        <PagesLayout isNavbarDark={true}>
+{loading ? (
+        <Loader />
+      ) : (
       <div>
+        
+   
+        
         <main>
       
           <div className="paq">
@@ -37,8 +59,10 @@ export const HomePage = () => {
           <div className='paq1'>
         
             <div className='div2'>
+       
               <div className='sub_container '>
-                <h1 className='title sm:w-[262px] sm:ml-20 sm:text-left'>
+               
+                <h1 className='title'>
                   Full-service Software <br />
                   Development
                 </h1>
@@ -51,226 +75,45 @@ export const HomePage = () => {
                 <div className='get-started'>
                   <a href="#" target="_blank" className='get_link'>Get Started</a>
                 </div>
-                <h2 className='work_title1'>How it works</h2>
-                <div className='arrow_container'>
-                  <div className='arrow'>
-                  <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z" fill="#707070"/>
-  </svg>
-  
-                  </div>
-                  <p className='work_desc'>
-                    <span className='sub_title'>Contact Us: </span>Get started by
-                    filling out a brief form to connect with us and kick off your
-                    software development project.
-                  </p>
-                  <div className="get-started">
-                    <a href="#" target="_blank" className="get_link">
-                      Get Started
-                    </a>
-                  </div>
-                  <h2 className="work_title1">How it works</h2>
-                  <div className="arrow_container">
-                    <div className="arrow">
-                      <svg
-                        width="13"
-                        height="16"
-                        viewBox="0 0 13 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                          fill="#707070"
-                        />
-                      </svg>
-                    </div>
-                    <p className="work_desc">
-                      <span className="sub_title">Contact Us: </span>Get started
-                      by filling out a brief form to connect with us and kick
-                      off your software development project.
-                    </p>
-                  </div>
-                  <div className="arrow_container">
-                    <div className="arrow">
-                      <svg
-                        width="13"
-                        height="16"
-                        viewBox="0 0 13 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                          fill="#707070"
-                        />
-                      </svg>
-                    </div>
-                    <p className="work_desc">
-                      <span className="sub_title">
-                        Discovery Call and Need Identification:{" "}
-                      </span>
-                      We will discuss your needs in detail to understand your
-                      goals and ensure we are aligned on the project’s scope.
-                    </p>
-                  </div>
-                  <div className="arrow_container">
-                    <div className="arrow">
-                      <svg
-                        width="13"
-                        height="16"
-                        viewBox="0 0 13 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                          fill="#707070"
-                        />
-                      </svg>
-                    </div>
-                    <p className="work_desc">
-                      <span className="sub_title">
-                        Send Us Your Product Brief:{" "}
-                      </span>
-                      Provide us with your product brief, outlining your
-                      objectives and product specifications to guide the
-                      development process.
-                    </p>
-                  </div>
-                  <div className="arrow_container">
-                    <div className="arrow">
-                      <svg
-                        width="13"
-                        height="16"
-                        viewBox="0 0 13 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                          fill="#707070"
-                        />
-                      </svg>
-                    </div>
-                    <p className="work_desc">
-                      <span className="sub_title">Contract Signing: </span>We
-                      will finalize the agreement and ensure all terms are clear
-                      before moving forward with development.
-                    </p>
-                  </div>
-                  <div className="arrow_container">
-                    <div className="arrow">
-                      <svg
-                        width="13"
-                        height="16"
-                        viewBox="0 0 13 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                          fill="#707070"
-                        />
-                      </svg>
-                    </div>
-                    <p className="work_desc">
-                      <span className="sub_title">Product Development: </span>
-                      Our team handles user research, planning, information
-                      architecture design, UI design, coding, testing,
-                      deployment, and quality assurance .
-                    </p>
-                  </div>
-                  <div className="arrow_container">
-                    <div className="arrow">
-                      <svg
-                        width="13"
-                        height="16"
-                        viewBox="0 0 13 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                          fill="#707070"
-                        />
-                      </svg>
-                    </div>
-                    <p className="work_desc">
-                      <span className="sub_title">
-                        Product Adoption Support:{" "}
-                      </span>
-                      After deployment, we offer support to help your team adopt
-                      the product and ensure smooth operation.
-                    </p>
-                  </div>
-                  <div className="arrow_container">
-                    <div className="arrow">
-                      <svg
-                        width="13"
-                        height="16"
-                        viewBox="0 0 13 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                          fill="#707070"
-                        />
-                      </svg>
-                    </div>
-                    <p className="work_desc">
-                      <span className="sub_title">
-                        Client Acceptance and Sign-Off:{" "}
-                      </span>
-                      Once satisfied, you will sign off on the product,
-                      officially completing the development phase
-                    </p>
-                  </div>
-                  <div className="arrow_container">
-                    <div className="arrow">
-                      <svg
-                        width="13"
-                        height="16"
-                        viewBox="0 0 13 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                          fill="#707070"
-                        />
-                      </svg>
-                    </div>
-                    <p className="work_desc">
-                      <span className="sub_title">Product Maintenance: </span>We
-                      offer ongoing maintenance, including performance
-                      monitoring and optimization, bug fixing, security updates,
-                      and feature enhancements to keep your product running
-                      smoothly .
-                    </p>
-                  </div>
-                </div>
+
+                <div className='first-image5'>
                 
-              </div>
-              <br />
-              
-              <div className='first-image'>
+                <img
+                  src="/Group210.svg"
+                  alt="Background"
+                  className=" "
+                  />
                 
-              <img
-                src="/Group210.svg"
-                alt="Background"
-                className=" "
-                />
-              
+                
               
             
-          
-               
-                
+                 
+                  
+                </div>
+               <CollapsibleParagraph>
+              
+                </CollapsibleParagraph>
               </div>
+              
+              <br />
+              <div className='first-image'>
+                
+                <img
+                  src="/Group210.svg"
+                  alt="Background"
+                  className=" "
+                  />
+                
+                
+              
+            
+                 
+                  
+                </div>
+              
+            
              
-              <div className=" top-10 right-10 z-10 hidden md:block">
+              {/* <div className=" top-10 right-10 z-10 hidden md:block">
                 <img
                 src="/Maskgroup2.png"
                 alt="Background"
@@ -284,18 +127,90 @@ export const HomePage = () => {
                 alt="Background"
                 className="z-50 w-30 mr-55 mt- h-80"
                 />
-               </div>
+               </div> */}
           
             </div>
+          </div>
+
+         
+  
+          </section>
+          <setion className='paq_mobile'>
+          <div className=''>
+        
+        <div className='div2'>
+   
+          <div className='sub_container '>
+           
+            <h1 className='title_mobile'>
+              Full-service Software <br />
+              Development
+            </h1>
+            <p className='desc_fourth_mobile'>
+              Transform your ideas into a market-ready product. Whether you
+              need a web, mobile, or enterprise application, we’ve got you
+              covered! Our expert engineering team will work closely with you
+              from planning to launch bringing your vision to
+            </p>
+            <div className='get-started-mobile'>
+              <a href="#" target="_blank" className='get_link'>Get Started</a>
             </div>
-                      </section>
-          <div className="relative bg-black text-white h-[900px] font-raleway">
-            <div className='today'>
-  <div className='flex jutify center items-center ml-60'>
+
+            <div className='first-image5'>
+            
+            <img
+              src="/Group210.svg"
+              alt="Background"
+              className="w-[300px] ml-[50px] mb-[70px]"
+              />
+            
+            
+          
+        
+             
+              
+            </div>
+           <CollapsibleParagraph>
+          
+            </CollapsibleParagraph>
+          </div>
+
+          
+          
+          
+            
+          
+          
+        
+         
+          {/* <div className=" top-10 right-10 z-10 hidden md:block">
+            <img
+            src="/Maskgroup2.png"
+            alt="Background"
+            className=" ml-50 h-80 mt-10 z-50"
+            />
+            
+           </div>
+          <div className='op-10 right-10 z-10 hidden md:block mt-35'>
+           <img
+            src="/Maskgroup3.png"
+            alt="Background"
+            className="z-50 w-30 mr-55 mt- h-80"
+            />
+           </div> */}
+      
+        </div>
+      </div>
+</setion>
+
+<section className='large_section'> 
+          <div className="large">
+            <div className='today_large'>
+  <div className=''>
   <img 
                src="/Group211.svg"
                alt="Background"
-               className="sm:"
+               className="ml-[200px] mt-[85px]"
                />
                
     
@@ -306,137 +221,85 @@ export const HomePage = () => {
   <div className='top'>
   
   <h1 className='h1'>
-               Why We Are The <br />
-               Best For You
+  Why We Are The Best For You
              </h1>
-  <p className='desc'>
-               We understand what it takes to build successful products. One of
-               our founders co-founded and launched three (3) technology
-               startups; a social network app with 15,000+ users in 26 countries,
-               a bus-hailing app that completed 100,000+ trips and generated over
-               US$1.6 million in gross bookings within 18 months, and an Agritech
-               startup that won a US$5,000 grant, while securing over US$150,000
-               in investor funding across ventures. With this proven track
-               record, we bring firsthand experience, deep expertise, and a
-               results-driven
+  <p className='desc_h1'>
+  We understand what it takes to build successful  products. One of our founders co-founded and  launched three (3) technology startups; a social  network app with 15,000+ users in 26 countries, a  bus-hailing app that completed 100,000+ trips and  generated over US$1.6 million in gross bookings  within 18 months, and an Agritech startup that  won a US$5,000 grant, while securing over  US$150,000 in investor funding across ventures.  With this proven track record, we bring firsthand  experience, deep expertise, and a results-driven
              </p>
-             <button className=" ml-10 mt-40 bg-orange text-black px-6 py-2 font-bold rounded-md">
-              Get Started
-            </button>
-             
+           
+             <div className='get-started2'>
+                  <a href="#" target="_blank" className='get_link'>Get Started</a>
+                </div>
              </div>
              </div>
   
   
   
          </div>
-     
-          <div className="relative bg-white text-black h-[600px] font-raleway sm:flex-col"> 
+         </section>
+         <section className='section_large_mobile'>
+         <div className="">
+            <div className=''>
+  
+  
+  <div className=''>
+  
+  <h1 className='fourth_title1'>
+  Why We Are The Best For You
+             </h1>
+  <p className='desc_fourth_section1'>
+  We understand what it takes to build successful  products. One of our founders co-founded and  launched three (3) technology startups; a social  network app with 15,000+ users in 26 countries, a  bus-hailing app that completed 100,000+ trips and  generated over US$1.6 million in gross bookings  within 18 months, and an Agritech startup that  won a US$5,000 grant, while securing over  US$150,000 in investor funding across ventures.  With this proven track record, we bring firsthand  experience, deep expertise, and a results-driven
+             </p>
+           
+             <div className='get-started-mobile1'>
+                  <a href="#" target="_blank" className='get_link'>Get Started</a>
+                </div>
+                <div className=''>
+  <img 
+               src="/Group164.svg"
+               alt="Background"
+               className=""
+               />
+               
+    
+  
+  
+  </div>
+             </div>
+             </div>
+  
+  
+  
+         </div>
+         </section>
+
+
+         
+     <section className='third_section'> 
+          <div className="relative bg-white text-black h-[700px] font-raleway flex-start"> 
             <div className='div_fourth'>
-              <div>
-                <h1 className="title">Team-as-a-Service</h1>
-                <p className="desc_fourth">
-                  Get instant access to top-vetted tech talent with expertise in
-                  Machine Learning, AI, Data, Blockchain, Cybersecurity, and
-                  more. We help companies build and manage Africa-based remote
-                  teams without the hassle of hiring, onboarding, or managing
-                  day-to-day operations. We handle everything—from recruitment
-                  and remuneration to performance management and even setting up
+            <div className='sub_container '>
+                 <h1 className='title'>
+                 Team-as-a-Service
+                 </h1>
+              <p className='desc_fourth'>
+                 Get instant access to top-vetted tech talent with expertise in
+                  Machine Learning, AI, Data, Blockchain, Cybersecurity, and more.
+                  We help companies build and manage Africa-based remote teams
+                  without the hassle of hiring, onboarding, or managing day-to-day
+                  operations. We handle everything—from recruitment and
+                  remuneration to performance management and even setting up
                   physical workspaces if needed.
-                </p>
-                <div className="get-started">
-                  <a href="#" target="_blank" className="get_link">
-                    Get Started
-                  </a>
+              </p>
+              <div className='get-started'>
+                  <a href="#" target="_blank" className='get_link'>Get Started</a>
                 </div>
-                <h2 className="work_title4">How it works</h2>
-                <div className="arrow_container">
-                  <div className="arrow">
-                    <svg
-                      width="13"
-                      height="16"
-                      viewBox="0 0 13 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                        fill="#707070"
-                      />
-                    </svg>
-                  </div>
-                  <p className="work_desc">
-                    <span className="sub_title"> Initial Screening: </span>We
-                    conduct an initial screening of applicants based on their
-                    resumes to ensure their skills, experience, and
-                    qualifications align with our quality standards.
-                  </p>
-                </div>
-                <div className="arrow_container">
-                  <div className="arrow">
-                    <svg
-                      width="13"
-                      height="16"
-                      viewBox="0 0 13 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                        fill="#707070"
-                      />
-                    </svg>
-                  </div>
-                  <p className="work_desc">
-                    <span className="sub_title">Technical Assessment: </span>
-                    Talents undergo a rigorous technical assessment to evaluate
-                    their skills and expertise in key technologies. .
-                  </p>
-                </div>
-                <div className="arrow_container">
-                  <div className="arrow">
-                    <svg
-                      width="13"
-                      height="16"
-                      viewBox="0 0 13 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                        fill="#707070"
-                      />
-                    </svg>
-                  </div>
-                  <p className="work_desc">
-                    <span className="sub_title">
-                      Non-Technical Assessment:{" "}
-                    </span>
-                    We assess talents for soft skills like communication,
-                    problem-solving, and adaptability to ensure team fit. .
-                  </p>
-                </div>
-                <div className="arrow_container">
-                  <div className="arrow">
-                    <svg
-                      width="13"
-                      height="16"
-                      viewBox="0 0 13 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z"
-                        fill="#707070"
-                      />
-                    </svg>
-                  </div>
-                  <p className="work_desc">
-                    <span className="sub_title">Culture-fit Interview: </span>We
-                    conduct a culture-fit interview to ensure the talents align
-                    with your company’s values and work environment .
-                  </p>
-                </div>
+                <CollapsibleWork></CollapsibleWork>
+             
+                <Collapsible>
+                
+                </Collapsible>
+          
               </div>
               
               <div className='fourt_image'> 
@@ -452,6 +315,48 @@ export const HomePage = () => {
            
   
        </div>
+       </section>
+       <section className='fourth'>
+       <div className="div_fourth_section"> 
+            <div className='div_fourth'>
+              <div>
+                 <h1 className='fourth_title'>
+                 Team-as-a-Service
+                 </h1>
+              <p className='desc_fourth_section'>
+                 Get instant access to top-vetted tech talent with expertise in
+                  Machine Learning, AI, Data, Blockchain, Cybersecurity, and more.
+                  We help companies build and manage Africa-based remote teams
+                  without the hassle of hiring, onboarding, or managing day-to-day
+                  operations. We handle everything—from recruitment and
+                  remuneration to performance management and even setting up
+                  physical workspaces if needed.
+              </p>
+              <div className='get-started-mobile'>
+                  <a href="#" target="_blank" className='get_link'>Get Started</a>
+                </div>
+                
+              <img 
+               src="/Group214.svg"
+               alt="Background"
+               className="w-[400px]"
+               />
+                
+             
+               
+                <CollapsibleWork></CollapsibleWork>
+                <Collapsible>
+              
+                </Collapsible>
+              
+              </div>
+              
+              
+            </div>
+           
+  
+       </div>
+       </section>
        
        <div className="large">
             <div className='today_large'>
@@ -469,10 +374,10 @@ export const HomePage = () => {
   
   <div className='top'>
   
-  <h1 className='h1'>
+  <h1 className='h11'>
   We Solve Market Problems  with Innovative Technology
              </h1>
-  <p className='desc_h1'>
+  <p className='desc_h11'>
   Our engineering team uses proven technologies to  deliver reliable, scalable, and fast solutions that  address your unique business needs.
              </p>
            
@@ -491,18 +396,21 @@ export const HomePage = () => {
   
   <div className='top_mobile'>
   
-  <h1 className='h1'>
+  <h1 className='h1_mobile'>
   We Solve Market Problems  with Innovative Technology
              </h1>
-  <p className='desc'>
+  <p className='desc_mobile'>
   Our engineering team uses proven technologies to  deliver reliable, scalable, and fast solutions that  address your unique business needs.
              </p>
+
+ 
              </div>
-             <div className='w-[500px] mb-[400x]'>
+           
+             <div className=''>
   <img 
                src="/Group51.svg"
                alt="Background"
-               className=" ml-[190px] mb-[300px]"
+               className=" ml-[190px] mb-[400px]  mr-[100px]"
                />
                
     
@@ -510,14 +418,13 @@ export const HomePage = () => {
   
   </div>
              
-             
              </div>
   
   
   
          </div>
-         
-      
+        
+      <section className='six_th'>
          <div className="sixth"> 
           <div className='div_sixth'>
           <div>
@@ -583,7 +490,74 @@ export const HomePage = () => {
           </div>
          
           </div>
+          </section>
+          <section className='sixth_section'>
+          <div className="sixth"> 
+          <div className='div_sixth'>
+          <div>
+                 <h1 className='fourth_title'>
+                 Microservices
+                 </h1>
+              <p className='desc_fourth_section'>
+                 Get instant access to top-vetted tech talent with expertise in
+                  Machine Learning, AI, Data, Blockchain, Cybersecurity, and more.
+                  We help companies build and manage Africa-based remote teams
+                  without the hassle of hiring, onboarding, or managing day-to-day
+                  operations. We handle everything—from recruitment and
+                  remuneration to performance management and even setting up
+                  physical workspaces if needed.
+              </p>
+              <div className='get-started-mobile'>
+                  <a href="#" target="_blank" className='get_link'>Get Started</a>
+                </div>
+              </div>
+              <div className='sixth_image'>
+              
+               <img 
+              src="/Group212.svg"
+              alt="Background"
+              className=" justify-center w-[600px]"
+            
+            />
+              </div>
+              {/* <div className= "flex justify-left mr-75 z-50 hidden md:block item-left">
+             
+             <img 
+               src="/Maskgroup4.png"
+               alt="Background"
+               className=" z-50"
+               />
+                 </div>
+                 <div className= "flex justify-left mr-75 z-50 hidden md:block item-left mt-20">
+             
+             <img 
+               src="/Maskgroup5.png"
+               alt="Background"
+               className=" z-50"
+               />
+                 </div> */}
+
+
+              
+
+
+<div>
+
+ 
+              
+             
+             
   
+       
+       
+    
+</div>
+     
+        
+          </div>
+         
+          </div>
+          </section>
          
          
          
@@ -592,16 +566,19 @@ export const HomePage = () => {
          <img 
                src="/group.svg"
                alt="Background"
-               className="mr-20"
+               className="mr-30"
                />
             </div>
-          </div>
-
-          <div className="relative bg-black text-white h-[900px] font-raleway">
-            <div className="div_seventh"></div>
-          </div>
+          
+  
+            </div>
+        
+      
         </main>
+        
       </div>
-    </PagesLayout>
-  );
-};
+    )}
+  </PagesLayout>
+    );
+  };
+  
