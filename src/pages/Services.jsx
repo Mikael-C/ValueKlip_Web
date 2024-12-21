@@ -21,7 +21,7 @@ export const Services = () => {
           <div className="md:hidden">
             <img
               src="/Vector44.png"
-              className="absolute z-40 left-48 h-[547px]"
+              className="absolute z-40 left-36 h-[547px]"
               alt=""
             />
           </div>
@@ -35,21 +35,22 @@ export const Services = () => {
           </div>
 
           {/* Content */}
-          <div className="relative z-10 container mx-auto px-6 py-24 flex flex-col md:flex-row items-center md:items-start">
-            <div className="text-center md:text-left md:w-[553px]">
+          <div className="relative w-auto z-10 container mx-auto md:px-6 py-24 flex flex-col md:flex-row items-center  md:items-start">
+            <div className="text-center mt-14 md:text-left md:w-[553px]">
               <p className="text-secondary md:text-[24px] text-[15px] uppercase font-normal mb-2">
                 + Our Services
               </p>
               <h1 className="text-5xl text-white md:text-[64px] font-semibold leading-[60px] md:leading-[70px] mb-2 md:mb-4">
-                <span className="bg-gradient-to-t from-secondary to-black md:bg-none bg-opacity-15 md:bg-opacity-100 px-2">
-                  Build, Scale,
+                <span className="md:bg-none bg-gradient-to-t from-secondary to-black bg-opacity-15 px-2">
+                  Build
                 </span>
-                and
-                <br />
-                Innovate with
+                <span className="bg-gradient-to-t md:bg-none  from-secondary to-black bg-opacity-15 px-2">
+                  Scale
+                </span>
+                and Innovate with
                 <span className="text-primary font-bold">Valueklip</span>
               </h1>
-              <p className="text-[#707070] md:w-[374px] text-sm mb-6">
+              <p className="text-[#707070] text-sm mb-6 max-w-[calc(100%-2rem)] mx-auto md:mx-0 md:w-[374px]">
                 We offer tailored tech solutions—from custom software
                 development and talent augmentation to expert technology
                 advisory and consulting—that drive your business forward.
@@ -69,7 +70,7 @@ export const Services = () => {
             </div>
 
             {/* White Badge: 35+ Years of Industry Experience */}
-            <div className="-rotate-12 md:rotate-0 absolute md:top-60 top-[570px] z-40 md:left-[570px] md:w-[240px] md:h-[83px] w-[130px] h-[33px] left-[150px] md:block">
+            <div className="-rotate-12 md:rotate-0 absolute md:top-60 top-[540px] z-40 md:left-[570px] md:w-[240px] md:h-[83px] w-[130px] h-[33px] left-[110px] md:block">
               <div className="bg-white flex flex-col items-center justify-center md:gap-7 gap-2 text-black rounded-md shadow-lg px-4 md:py-4 text-center">
                 <p className="md:text-[40px] text-[22px] font-medium leading-[16.32px]">
                   35+
@@ -81,8 +82,8 @@ export const Services = () => {
             </div>
 
             {/* Circular Image ("From Africa to the World") */}
-            <div className="-rotate-12 md:rotate-0 absolute md:top-8 md:right-32 top-1  left-48 md:left-[30%] z-20">
-              <div className="md:w-[80px] md:h-[80px] w-10 h-10 rounded-full border-[1px] border-[#D7BDBD4F] flex items-center justify-center ml-10 md:ml-[750px] md:mt-16 -mt-14 bg-black">
+            <div className="-rotate-12 md:rotate-0 absolute md:top-8 md:right-32 top-1  left- md:left-[30%] z-20">
+              <div className="md:w-[80px] md:h-[80px] w-10 h-10 rounded-full border-[1px] border-[#D7BDBD4F] flex items-center justify-center ml-6 md:ml-[750px] md:mt-16 -mt-14 bg-black">
                 <img
                   src="/Ellipse.png"
                   alt="From Africa to the World"

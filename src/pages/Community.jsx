@@ -18,8 +18,8 @@ export const Community = () => {
             </div>
 
             {/* Mobile Community Images */}
-            <div className="absolute md:hidden left-48 -mt-10 z-40">
-              <div className="flex">
+            <div className="absolute md:hidden left-40  -mt-10 z-40">
+              <div className="flex justify-center items-center">
                 <img
                   src="/men-commuinty-mobile.png"
                   alt="men-commuinty-mobile"
@@ -37,7 +37,7 @@ export const Community = () => {
             <div className="md:hidden">
               <img
                 src="/Vector44.png"
-                className="absolute z-40 left-48 h-[547px]"
+                className="absolute z-40 left-40 h-[547px]"
                 alt=""
               />
             </div>
@@ -51,8 +51,8 @@ export const Community = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-40 container mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between">
-              <div className="text-center  md:text-left md:w-[553px] flex-1">
+            <div className="relative  z-40 w-auto container mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between">
+              <div className="text-center mt-16 md:mt-0  md:text-left md:w-[553px] flex-1">
                 <p className="text-secondary uppercase text-[24px] font-normal mb-2">
                   + COMMUNITY
                 </p>
@@ -65,7 +65,7 @@ export const Community = () => {
                   </span>
                   Career
                 </h1>
-                <p className="text-[#707070] text-[14px] font-normal mb-6 max-w-lg">
+                <p className="text-[#707070] w-[315px] text-[14px] font-normal mb-6 max-w-lg">
                   Join Valueklip Tech Community to access global paid gigs,
                   mentorship, courses, leadership opportunities, career
                   development, and create innovative solutions that impact

@@ -7,48 +7,56 @@ export const BecomeAnSlg = () => {
       <>
         <div className="relative bg-black text-white h-[700px] font-raleway">
           {/* Background Image */}
-          <div className="absolute top-0 left-0 w-full ">
+          <div className="absolute top-0 left-0 w-full">
             <img
               src="/bg.png"
               alt="Background"
-              className="opacity-80 w-full h-[700px] "
+              className="opacity-80 w-full h-[700px]"
             />
           </div>
 
-          <div className="absolute z-40 left-1/2 transform -translate-x-1/2 md:hidden">
+          {/* Hands Image for Mobile */}
+          <div className="absolute -mt-10 z-40 left-1/2 transform -translate-x-1/2 md:hidden">
             <img src="/hands-mobile.png" width={64} alt="" />
           </div>
 
+          {/* Vectors for Mobile */}
           <div
             id="vectors"
             className="absolute z-40 left-1/2 transform -translate-x-1/2 md:hidden"
           >
-            <div className="mt-14 ml-10">
+            <div className="mt-4 ml-10">
               <img src="/Vector44.png" className="" alt="" />
             </div>
             <img
               src="/becomeSlgVector-mobile.svg"
-              className="-mt-[450px] ml-20 "
+              className="-mt-[480px] ml-20"
+              alt=""
+            />
+          </div>
+          <div className="md:hidden">
+            <img
+              src="/Rectangle3.png"
+              className="absolute mt-36 h-48 top-[420px] w-full"
               alt=""
             />
           </div>
 
           {/* Content */}
-          <div className="relative  z-10 container mx-auto md:px-6 py-24">
-            <p className="text-secondary text-[24px] text-center md:text-start uppercase font-normal mb-2">
-              + BECOME AN SLG
+          <div className="relative z-10 w-auto container mx-auto px-4 py-12 md:px-6 md:py-24">
+            <p className="md:bg-none text-secondary mt-14 text-[20px] text-center uppercase font-normal mb-2 md:text-[24px] md:text-start">
+              + COMMUNITY
             </p>
-            <h1 className="text-5xl text-center md:text-start text-white md:ml-0  md:text-[64px] w-auto md:w-[553px] font-[500] md:font-semibold leading-[70px] mb-4">
+            <h1 className="text-4xl text-center md:w-[500px] text-white font-bold leading-[50px] mb-4 md:text-5xl md:leading-[70px] md:text-start ">
               <span className="text-primary">
-                <span className="bg-gradient-to-t p-2 from-secondary to-black md:bg-none bg-opacity-30 md:bg-opacity-100 px-2">
+                <span className="bg-gradient-to-t md:bg-none from-secondary to-black px-2">
                   Expand
                 </span>
-                Your Income Stream With{" "}
-              </span>
-              Valueklip
+                Your Income Stream
+              </span>{" "}
+              With Valueklip
             </h1>
-            {/*  Your Income Stream  With Valueklip */}
-            <p className="text-[#707070] md:text-start md:mx-0 mx-4 text-center text-sm mb-6 max-w-lg">
+            <p className="text-[#707070] md:w-[450px] text-center text-sm leading-5 mb-6 sm:text-base md:text-start md:leading-6 md:mb-4">
               Join Valueklip as a Sales Lead Generator (SLG) and help businesses
               access custom software solutions or hire remote tech talents.
               Leverage your skills and network to connect with potential clients
@@ -56,25 +64,26 @@ export const BecomeAnSlg = () => {
               flexible side hustle or extra income, this opportunity is ideal
               for motivated individuals.
             </p>
-            <div className="flex items-center justify-center md:block">
+            <div className="flex md:mt-10 mt-0 items-center justify-center md:block">
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfoTj_vjdNbi1sJSzEeb1XEAT0NCr1aDeXP_o9cCEtJzHbPgg/viewform"
                 target="_blank"
               >
-                <button className="bg-secondary text-white px-6 py-2  font-bold rounded-lg ">
+                <button className="bg-secondary text-white px-4 py-2 text-sm font-bold rounded-lg md:px-6 md:py-2 md:text-base">
                   Become an SLG
                 </button>
               </a>
             </div>
           </div>
 
-          {/* Blue Rectangle  */}
-          <div className="absolute top-0 right-60 md:w-[400px] h-[580px] bg-secondary z-0 rounded-lg hidden md:block"></div>
-          <div className="absolute left-[76%] md:top-[500px] top-[530px] md:rotate-0 -rotate-12">
+          {/* Blue Rectangle for Desktop */}
+          <div className="absolute hidden top-0 right-60 md:block md:w-[400px] h-[580px] bg-secondary z-0 rounded-lg"></div>
+          <div className="absolute left-[76%] top-[530px] md:top-[500px] -rotate-12 md:rotate-0">
             <img src="/Group59.png" alt="" className="w-[30px] md:w-[105px]" />
           </div>
-          {/* Hands Image */}
-          <div className="absolute top-0 right-24 z-20 hidden md:block">
+
+          {/* Hands Image for Desktop */}
+          <div className="absolute top-0 right-16 z-20 hidden md:block">
             <img
               src="/hands-different-skin-color-ethnicities-coming-together-sign-diversity_23-2151763142-removebg-preview.png"
               alt="Professional Woman"
@@ -83,9 +92,9 @@ export const BecomeAnSlg = () => {
           </div>
 
           {/* White Badge */}
-          <div className="absolute md:top-72 top-[590px] left-40 md:left-[640px] -rotate-12 md:rotate-0 md:w-[240px] md:h-[83px] w-[93px] h-[37px] z-10">
-            <div className="bg-white  flex justify-center items-center md:block    gap-7 text-black rounded-md shadow-lg md:px-4 md:py-10 py-3 text-center">
-              <p className="md:text-[40px] text-[18px]  font-medium leading-[16.32px] ">
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-[530px] md:top-72 md:left-[810px] md:w-[240px] md:h-[83px] w-[93px] h-[47px] z-10 -rotate-12 md:rotate-0">
+            <div className="bg-white flex justify-center items-center text-black rounded-md shadow-lg px-4 py-3 md:px-4 md:py-10 text-center">
+              <p className="text-[14px] md:text-[40px] font-medium leading-[16.32px]">
                 Join Us
               </p>
             </div>
