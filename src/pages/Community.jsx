@@ -65,7 +65,7 @@ export const Community = () => {
                   </span>
                   Career
                 </h1>
-                <p className="text-[#707070] w-[315px] text-[14px] font-normal mb-6 max-w-lg">
+                <p className="text-[#707070] w-[415px] text-[14px] font-normal mb-6 max-w-lg">
                   Join Valueklip Tech Community to access global paid gigs,
                   mentorship, courses, leadership opportunities, career
                   development, and create innovative solutions that impact
@@ -75,7 +75,7 @@ export const Community = () => {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdPwLAWhiKKACozN5gLDLtY8ecpJjneWmlSwzQqdL5w4hXuUg/viewform"
                   target="_blank"
                 >
-                  <button className="bg-secondary text-white px-6 py-2 font-bold rounded-xl">
+                  <button className="bg-secondary text-white px-6 py-2 font-bold md:w-[131px] rounded-xl">
                     Join now
                   </button>
                 </a>
@@ -112,14 +112,14 @@ export const Community = () => {
             <div className="flex md:flex-row flex-col   md:justify-evenly py-20">
               {/* Title Section */}
               <div className="mb-20 md:mb-0 text-center z-50 me-10 md:me-0">
-                <p className="text-orange  md:ml-0 ml-9 md:text-start md:text-[48px] text-3xl font-extrabold md:w-[508px] w-[90%]  leading-tight">
+                <p className="text-orange  md:-ml-20 ml-9 md:text-start md:text-[48px] text-3xl font-extrabold md:w-[508px] w-[90%]  leading-tight">
                   Exclusive Perks of Joining the Valueklip Tech Community
                 </p>
               </div>
 
               {/* List Section */}
-              <div className="text-white ml-5  md:w-[600px] md:ml-40 w-[91%]">
-                <ul>
+              <div className="text-white ml-5  md:w-[500px] md:ml-30 w-[91%]">
+                <ul className="md:w-[650px]">
                   <li>
                     <CommunityList
                       title={"Paid Gig:"}
@@ -173,7 +173,7 @@ export const Community = () => {
             </div>
           </div>
           <div className="w-full py-20 px-10 md:h-[793px] ">
-            <div className="absolute top-[1805px]  left-64">
+            <div className="absolute top-[1670px]  left-64">
               <div className="md:block hidden">
                 <img
                   src={`/Vector41.png`}
