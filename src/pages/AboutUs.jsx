@@ -2,6 +2,7 @@ import React from 'react';
 
 import { PagesLayout } from "../layout/PagesLayout";
 import "./Home.css"
+import { AboutList } from "../components/AboutUsList"
 
 export const AboutUs = () => {
   return (
@@ -39,7 +40,7 @@ export const AboutUs = () => {
           <img
                 src="/Frame181.svg"
                 alt=""
-                 className="w-[1084px] h-[600px] ml-[100px]  
+                 className="w-[1084px] h-[600px]   
                  "
               />
 
@@ -83,19 +84,19 @@ export const AboutUs = () => {
         <div className="second_content ">
           
        
-          <div className="absolute top-[1085px]  h-[500px]left-64 mt-60 ml-10 mb-[200px]  " >
+          <div className="absolute top-[1085px]  h-[900px]left-64  ml-40 mb-[200px]  mt-[120px]" >
             <div>
               <img
                 src="/Vector41.svg"
                 alt=""
-                 className="w-[1084px] h-[400px]  mr-50 mb-[500px]"
+                 className="w-[1084px] h-[900px]   mb-[500px]"
               />
             </div>
           </div>
           <div className="flex flex-row justify-between items-center  text-white py-16 px-24 mt-30">
             {/* Title Section */}
-            <div className=' mr-[30px] mt-50'>
-              <p className= ' text-[40px] w-[392px] text-black mt-[70px] font-raleway'>Experience the Valueklip Effect</p>
+            <div className=' mr-[30px] mt-50 mb-[220px]'>
+              <p className= 'font-[600] text-[40px] w-[392px] text-black mt-[70px] font-raleway'>Experience the Valueklip Effect</p>
               <p className='text[10px] w-[350px] text-[#707070]'>When you work with us, you will see our  core values in action. From visionary  thinking to agile solutions, and listening to  clients, the Valueklip Effect drives our  mission to empower businesses with  innovative technology solutions.</p>
               
             </div>
@@ -106,13 +107,12 @@ export const AboutUs = () => {
             
             {/* List Section */}
            
-            <div className='w-[900px] mt-40 mr-30'>
+            <div className="">
             <img
                 src="/Frame5.svg"
                 alt=""
-                 className="w-[1000px] h-[327px]"
+                 className="w-[1084px] h-[900px] ml-[95px]  "
               />
-            
             </div>
           </div>
           
@@ -129,7 +129,7 @@ export const AboutUs = () => {
                 </p>
                 
                 <div className='context_container'>
-                  <div className='line'>
+                  <div className='line1'>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="9.83061" cy="9.83061" r="9.83061" fill="#D9D9D9" fill-opacity="0.41"/>
 <path d="M15.3931 10.6491C15.6579 10.3843 15.6579 9.95504 15.3931 9.69028L11.0785 5.37568C10.8138 5.11092 10.3845 5.11092 10.1197 5.37568C9.85498 5.64045 9.85498 6.06972 10.1197 6.33448L13.9549 10.1697L10.1197 14.0049C9.85498 14.2696 9.85498 14.6989 10.1197 14.9637C10.3845 15.2284 10.8138 15.2284 11.0785 14.9637L15.3931 10.6491ZM4.74414 10.8477H14.9137V9.4917H4.74414V10.8477Z" fill="#FFFCFC"/>
@@ -142,7 +142,7 @@ export const AboutUs = () => {
                   </p>
                 </div>
                 <div className='arrow_container'>
-                  <div className='line'>
+                  <div className='line2'>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="9.83061" cy="9.83061" r="9.83061" fill="#D9D9D9" fill-opacity="0.41"/>
 <path d="M15.3931 10.6491C15.6579 10.3843 15.6579 9.95504 15.3931 9.69028L11.0785 5.37568C10.8138 5.11092 10.3845 5.11092 10.1197 5.37568C9.85498 5.64045 9.85498 6.06972 10.1197 6.33448L13.9549 10.1697L10.1197 14.0049C9.85498 14.2696 9.85498 14.6989 10.1197 14.9637C10.3845 15.2284 10.8138 15.2284 11.0785 14.9637L15.3931 10.6491ZM4.74414 10.8477H14.9137V9.4917H4.74414V10.8477Z" fill="#FFFCFC"/>
@@ -156,7 +156,7 @@ export const AboutUs = () => {
                   </p>
                 </div>
                 <div className='arrow_container'>
-                  <div className='line'>
+                  <div className='line2'>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="9.83061" cy="9.83061" r="9.83061" fill="#D9D9D9" fill-opacity="0.41"/>
 <path d="M15.3931 10.6491C15.6579 10.3843 15.6579 9.95504 15.3931 9.69028L11.0785 5.37568C10.8138 5.11092 10.3845 5.11092 10.1197 5.37568C9.85498 5.64045 9.85498 6.06972 10.1197 6.33448L13.9549 10.1697L10.1197 14.0049C9.85498 14.2696 9.85498 14.6989 10.1197 14.9637C10.3845 15.2284 10.8138 15.2284 11.0785 14.9637L15.3931 10.6491ZM4.74414 10.8477H14.9137V9.4917H4.74414V10.8477Z" fill="#FFFCFC"/>
@@ -197,7 +197,7 @@ export const AboutUs = () => {
                   </p>
                 </div>
                 <div className='arrow_container'>
-                  <div className='line'>
+                  <div className='line2'>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="9.83061" cy="9.83061" r="9.83061" fill="#D9D9D9" fill-opacity="0.41"/>
 <path d="M15.3931 10.6491C15.6579 10.3843 15.6579 9.95504 15.3931 9.69028L11.0785 5.37568C10.8138 5.11092 10.3845 5.11092 10.1197 5.37568C9.85498 5.64045 9.85498 6.06972 10.1197 6.33448L13.9549 10.1697L10.1197 14.0049C9.85498 14.2696 9.85498 14.6989 10.1197 14.9637C10.3845 15.2284 10.8138 15.2284 11.0785 14.9637L15.3931 10.6491ZM4.74414 10.8477H14.9137V9.4917H4.74414V10.8477Z" fill="#FFFCFC"/>
@@ -211,7 +211,7 @@ export const AboutUs = () => {
                   </p>
                 </div>
                 <div className='arrow_container'>
-                  <div className='line'>
+                  <div className='line1'>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="9.83061" cy="9.83061" r="9.83061" fill="#D9D9D9" fill-opacity="0.41"/>
 <path d="M15.3931 10.6491C15.6579 10.3843 15.6579 9.95504 15.3931 9.69028L11.0785 5.37568C10.8138 5.11092 10.3845 5.11092 10.1197 5.37568C9.85498 5.64045 9.85498 6.06972 10.1197 6.33448L13.9549 10.1697L10.1197 14.0049C9.85498 14.2696 9.85498 14.6989 10.1197 14.9637C10.3845 15.2284 10.8138 15.2284 11.0785 14.9637L15.3931 10.6491ZM4.74414 10.8477H14.9137V9.4917H4.74414V10.8477Z" fill="#FFFCFC"/>
@@ -238,7 +238,7 @@ export const AboutUs = () => {
                   </p>
                 </div>
                 <div className='arrow_container'>
-                  <div className='line'>
+                  <div className='line2'>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="9.83061" cy="9.83061" r="9.83061" fill="#D9D9D9" fill-opacity="0.41"/>
 <path d="M15.3931 10.6491C15.6579 10.3843 15.6579 9.95504 15.3931 9.69028L11.0785 5.37568C10.8138 5.11092 10.3845 5.11092 10.1197 5.37568C9.85498 5.64045 9.85498 6.06972 10.1197 6.33448L13.9549 10.1697L10.1197 14.0049C9.85498 14.2696 9.85498 14.6989 10.1197 14.9637C10.3845 15.2284 10.8138 15.2284 11.0785 14.9637L15.3931 10.6491ZM4.74414 10.8477H14.9137V9.4917H4.74414V10.8477Z" fill="#FFFCFC"/>

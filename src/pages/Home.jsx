@@ -6,6 +6,7 @@ import Loader from '../components/Loader';
 import CollapsibleParagraph from '../components/Collapse';
 import Collapsible from '../components/Collapseservices';
 import CollapsibleWork from '../components/Collapsework';
+import CollapsibleParagraph1 from '../components/Collapse1';
 
 
 
@@ -32,8 +33,14 @@ export const HomePage = () => {
       
           <div className="paq">
             <div className='text_paq'>
-           <h1>Design, build and launch your custom software product faster
-           </h1>
+            <h1 class="one">Design, build and launch</h1>
+          <p class="two dim">
+            your custom software
+            product faster
+          </p>
+
+           <span class="four"
+            >Transform your ideas into a market-ready product.</span>
        
                 </div>
                 <div className='learn'>
@@ -42,8 +49,10 @@ export const HomePage = () => {
                 target="_blank"
                
                 className='learn_link'
-                >Learn More </a>
-                <svg  width="13" height="9" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                >Learn More
+                
+                 </a> <br />
+                 <svg  className='icon' width="13" height="9" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M0.500977 2.5C0.224834 2.5 0.000976562 2.72386 0.000976562 3C0.000976562 3.27614 0.224834 3.5 0.500977 3.5V2.5ZM6.83431 3C6.83431 4.47276 8.02822 5.66667 9.50098 5.66667C10.9737 5.66667 12.1676 4.47276 12.1676 3C12.1676 1.52724 10.9737 0.333333 9.50098 0.333333C8.02822 0.333333 6.83431 1.52724 6.83431 3ZM0.500977 3.5H9.50098V2.5H0.500977V3.5Z" fill="url(#paint0_linear_151_1421)"/>
   <defs>
   <linearGradient id="paint0_linear_151_1421" x1="0.500977" y1="3.5" x2="9.50098" y2="3.5" gradientUnits="userSpaceOnUse">
@@ -54,6 +63,40 @@ export const HomePage = () => {
                 
                 </div>
           </div>
+<section className='header'>
+          <div className="header">
+            <div className='div_fourth'> 
+            <h1 className='text_header'>Design, build and launch
+          
+            your custom software
+            product faster
+        
+            </h1>
+           <p className='header_text'>Transform your ideas into a market-ready product.</p>
+       
+                </div>
+                <div className='learn'>
+          <a
+                href="#"
+                target="_blank"
+               
+                className='learn_link'
+                >Learn More
+                
+                 </a> <br />
+                 <svg  className='icon1' width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.44195 0.62793C3.44195 0.390319 3.24933 0.197697 3.01172 0.197697C2.77411 0.197697 2.58149 0.390319 2.58149 0.62793L3.44195 0.62793ZM3.01172 6.07754C1.74446 6.07754 0.717145 7.10486 0.717145 8.37212C0.717145 9.63937 1.74446 10.6667 3.01172 10.6667C4.27898 10.6667 5.30629 9.63937 5.30629 8.37212C5.30629 7.10486 4.27898 6.07754 3.01172 6.07754ZM2.58149 0.62793L2.58149 8.37212L3.44195 8.37212L3.44195 0.62793L2.58149 0.62793Z" fill="url(#paint0_linear_755_4391)"/>
+<defs>
+<linearGradient id="paint0_linear_755_4391" x1="2.51172" y1="0.62793" x2="2.51172" y2="8.37212" gradientUnits="userSpaceOnUse">
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
+
+                
+                </div>
+          </div>
+          </section>
   
           <section className='second'>
           <div className='paq1'>
@@ -66,13 +109,13 @@ export const HomePage = () => {
                   Full-service Software <br />
                   Development
                 </h1>
-                <p className='desc_fourth'>
+                <p className='desc_fourth0'>
                   Transform your ideas into a market-ready product. Whether you
                   need a web, mobile, or enterprise application, we’ve got you
                   covered! Our expert engineering team will work closely with you
                   from planning to launch bringing your vision to
                 </p>
-                <div className='get-started'>
+                <div className='get-started0'>
                   <a href="#" target="_blank" className='get_link'>Get Started</a>
                 </div>
 
@@ -81,7 +124,7 @@ export const HomePage = () => {
                 <img
                   src="/Group210.svg"
                   alt="Background"
-                  className=" "
+                  className=" w-[500px]"
                   />
                 
                 
@@ -170,9 +213,49 @@ export const HomePage = () => {
              
               
             </div>
-           <CollapsibleParagraph>
+            <h2 class="work_title5">How it works</h2>
+            <div className='arrow_container'>
+                  <div className='arrow1'>
+                  <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z" fill="#707070"/>
+  </svg>
+  
+                  </div>
+                  <p className='context_text1'>
+                    <span className='sub_title'>Contact Us: </span>Get started by
+                    filling out a brief form to connect with us and kick off your
+                    software development project.
+                  </p>
+                </div>
+                <div className='arrow_container'>
+                  <div className='arrow1'>
+                  <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z" fill="#707070"/>
+  </svg>
+  
+                  </div>
+                  <p className='context_text1'>
+                    <span className='sub_title'>Discovery Call and Need Identification: </span>
+                    We will discuss your needs in detail to understand your goals
+                    and ensure we are aligned on the project’s scope.
+                  </p>
+                </div>
+                <div className='arrow_container'>
+                  <div className='arrow1'>
+                  <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.29289L6.34315 0.928932C5.95262 0.538408 5.31946 0.538408 4.92893 0.928932C4.53841 1.31946 4.53841 1.95262 4.92893 2.34315L10.5858 8L4.92893 13.6569C4.53841 14.0474 4.53841 14.6805 4.92893 15.0711C5.31946 15.4616 5.95262 15.4616 6.34315 15.0711L12.7071 8.70711ZM0 9H12V7H0V9Z" fill="#707070"/>
+  </svg>
+  
+                  </div>
+                  <p className='context_text2'>
+                    <span className='sub_title'>Discovery Call and Need Identification: </span>
+                    We will discuss your needs in detail to understand your goals
+                    and ensure we are aligned on the project’s scope.
+                  </p>
+                </div>
+           <CollapsibleParagraph1>
           
-            </CollapsibleParagraph>
+            </CollapsibleParagraph1>
           </div>
 
           
@@ -238,12 +321,11 @@ export const HomePage = () => {
          </div>
          </section>
          <section className='section_large_mobile'>
-         <div className="">
-            <div className=''>
+         <div className="div_fourth">
+            
   
   
-  <div className=''>
-  
+
   <h1 className='fourth_title1'>
   Why We Are The Best For You
              </h1>
@@ -254,7 +336,7 @@ export const HomePage = () => {
              <div className='get-started-mobile1'>
                   <a href="#" target="_blank" className='get_link'>Get Started</a>
                 </div>
-                <div className=''>
+                <div className='flex items-center justify-center'>
   <img 
                src="/Group164.svg"
                alt="Background"
@@ -265,8 +347,8 @@ export const HomePage = () => {
   
   
   </div>
-             </div>
-             </div>
+             
+             
   
   
   
@@ -378,7 +460,7 @@ export const HomePage = () => {
   We Solve Market Problems  with Innovative Technology
              </h1>
   <p className='desc_h11'>
-  Our engineering team uses proven technologies to  deliver reliable, scalable, and fast solutions that  address your unique business needs.
+  Our engineering team uses proven technologies to  deliver reliable, scalable, and fast solutions that  address your<br /> unique business needs.
              </p>
            
              
@@ -406,11 +488,11 @@ export const HomePage = () => {
  
              </div>
            
-             <div className=''>
+             <div className='lex items-center justify-center'>
   <img 
                src="/Group51.svg"
                alt="Background"
-               className=" ml-[190px] mb-[400px]  mr-[100px]"
+               className=" ml-[150px] mb-[400px]  "
                />
                
     
@@ -561,7 +643,7 @@ export const HomePage = () => {
          
          
          
-         <div className="relative bg-black text-white h-[900px] font-raleway">
+         <div className="div_seventh">
          <div className="div_seventh">
          <img 
                src="/group.svg"
@@ -572,7 +654,25 @@ export const HomePage = () => {
           
   
             </div>
-        
+            <section className='seventh_mobile'>
+            <div className="div_seventh_mobile">
+            <h1 className='fourth_title2'>
+            Micro-consulting
+                 </h1>
+              <p className='desc_fourth_section2'>
+              Get quick, expert advice to drive your business  forward. We help you make informed decisions,  improve efficiency, and reduce risks. We provide  product development strategy, cloud infrastructure  consulting, performance optimization, security  compliance, risk assessments, API selection and  implementation advisory, and more.
+              </p>
+            
+         <img 
+               src="/Group169.svg"
+               alt="Background"
+               className="mr-30"
+               />
+                 <div className='get-started-mobile2'>
+                  <a href="#" target="_blank" className='get_link'>Get Started</a>
+                </div>
+            </div>
+            </section>
       
         </main>
         
